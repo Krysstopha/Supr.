@@ -7,7 +7,7 @@ html,
 body {
     height: 100%;
 }
-
+/* START OF LAND PAGE CODE */
 /* Cover Landing */
 #cover {
     background: #222 url('https://images4.alphacoders.com/568/568014.jpg') center center no-repeat;
@@ -35,12 +35,23 @@ body {
 /* Kicker on Welcome Page */
 .kicker {
     font-size: 40px;
+    -webkit-animation-delay: 1s;
+    -o-animation-delay: 1s;
+    animation-delay: 1s;
 }
+
+/* END OF LANDING PAGE CODE */
+
+/* START OF NAV BAR CODE */
 
 /* Nav Bar Color */
 .navbar-inverse {
     background-color: rgba(0,0,0,0.6);
 }
+
+/* END OF NAV BAR CODE */
+
+/* START OF ABOUT SECTION CODE */
 
 /* Simplicity Statement */
 .h2-statement {
@@ -57,6 +68,7 @@ body {
     padding-bottom: 50px;
 }
 
+/* Main Div of the about section */
 .face-lockup {
     max-width: 780px;
     display: flex;
@@ -65,15 +77,130 @@ body {
     justify-content: space-around;
 }
 
-.icon {
-    margin-left: 40px;
-    margin-right: 40px;
-    padding: 20px;
+/* Icons in the about section */
+.about-icon {
+    font-size: 45px;
     background-color: #e5eaee;
-    border-radius: 25%;
+    border-radius: 50%;
+    padding: 20px;
+    color: #768FFF;
 }
 
+.icon1 {order: 1;}
+.icon2 {order: 2;}
+.icon3 {order: 3;}
+.icon4 {order: 4;}
+.icon5 {order: 5;}
+
+/* About section small text */
 .intro-statement {
+    padding-bottom: 50px;
     text-align: center;
-    padding-top: 60px;
+    font-size: 40px;
 }
+
+@media screen and (max-width: 660px) {
+    .face-lockup {
+        display: block;
+        text-align: center;
+    }
+    .face-image {
+        margin-bottom: 30px;
+        justify-content: center;
+        background-position: center center;
+        width: auto;
+    }
+    .icon1 {
+        margin: 10px;
+    }
+    .icon2 {
+        margin: 10px;
+    }
+    .icon4 {
+        margin: 10px;
+    }
+    .icon5 {
+        margin: 10px;
+    }
+}
+/* About section text */
+.blurb {
+    max-width: 620px;
+    padding: 0 15px;
+    margin: 50px auto;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 400;
+}
+
+/* END OF ABOUT SECTION CODE! */
+
+/* START OF SKILLS SECTION CODE */
+
+.skill-lockup {
+  text-align: center;
+    max-width: 500px;
+    margin: 80px auto;
+    color: #999;
+    overflow: auto;
+}
+
+.skill-unit {
+    width: 250px;
+    float: left;
+}
+
+.skill-icon {
+  margin-bottom: 30px;
+  margin-left: 2px;
+  font-size: 0;
+}
+
+/* SKILL DIVS /\ /\ */
+
+/* The Circles */
+.skill-icon > span {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    color: #768FFF;
+    background-color: #768FFF;
+    margin-right: 2px;
+    border-radius: 50%;
+    margin-right: 3.5px;
+
+}
+.skill-icon > span::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: #FFF;
+    border-radius: 50%;
+    margin: 2px;
+
+}
+
+.rating-8 > span:nth-child(n+9) {
+    background-color: #E5EAFF;
+}
+.rating-9 > span:nth-child(n+10) {
+    background-color: #E5EAFF;
+}
+.rating-7 > span:nth-child(n+8) {
+    background-color: #E5EAFF;
+}
+.rating-6 > span:nth-child(n+7) {
+    background-color: #E5EAFF;
+}
+
+@media screen and (max-width: 541px) {
+    .skill-lockup {
+        width: 270px;
+    }
+
+}
+
+/* End Of The Circles */
+
+/* END OF SKILLS SECTION CODE */
