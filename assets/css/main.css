@@ -9,7 +9,6 @@ body {
 }
 
 /* Cover Landing */
-
 #cover {
     background: #222 url('https://images4.alphacoders.com/568/568014.jpg') center center no-repeat;
     background-size: cover;
@@ -19,7 +18,62 @@ body {
     display: flex;
     align-items: center;
 }
-
+/* Welcome Section */
 #cover-caption {
     width: 100%;
+}
+
+/* Title */
+.cover-title {
+    font-size: 100px;
+    border-top: 12px solid #769FFF;
+    border-bottom: 12px solid #769FFF;
+    border-radius: 10px;
+    padding-bottom: 5px;
+}
+
+/* Kicker on Welcome Page */
+.kicker {
+    font-size: 40px;
+}
+
+/* Nav Bar Color */
+.navbar-inverse {
+    background-color: rgba(0,0,0,0.6);
+}
+
+/* Simplicity Statement */
+.h2-statement {
+    font-size: 40px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    text-align: center;
+}
+
+/* About Section */
+#About {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.face-lockup {
+    max-width: 780px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-around;
+}
+
+.icon {
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 20px;
+    background-color: #e5eaee;
+    border-radius: 25%;
+}
+
+.intro-statement {
+    text-align: center;
+    padding-top: 60px;
 }

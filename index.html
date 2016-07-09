@@ -4,32 +4,110 @@
     <!-- Meta Tags -->
     <meta content="text/html; charset=utf-8" http-equiv="Content-type">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Title -->
     <title>Kryss' Design</title>
     <!-- Links -->
     <!-- Bootstrap First! -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <!-- Then main stylesheet -->
+    <!-- Then main stylesheets -->
     <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet">
   </head>
 <body>
-  <section id="cover">
-      <div id="cover-caption">
-        <div class="container">
-          <div class="col-sm-10 col-sm-offset-1">
-            <h1>Kryss' Design</h1>
-            <p>Welcome to the wonders of Kryss' Design. <br>
-            Enjoy your stay!</p>
-            <a href="#nav-main" role="button" class="btn btn-success btn-md">
-              <span class="glyphicon glyphicon-chevron-down"></span>
-            </a>
-          </div>
+<!-- WELCOME PAGE -->
+    <section id="cover">
+        <div id="cover-caption">
+            <div class="container">
+                <div class="col-sm-10 col-sm-offset-1">
+                    <h1 class="cover-title zoomIn animated">Kryss' Design</h1>
+                    <p class="kicker zoomIn animated">Designer <span style="color: #769FFF">//</span> Creator <span style="color: #769FFF">//</span> Presentor</p>
+                    <a href="#welcome" role="button" class="btn btn-default btn-md">                       <!-- ADD LINK! -->
+                    <span class="glyphicon glyphicon-chevron-down" style="color: #769FFF"></span>
+                    </a>
+                </div>
+            </div>
         </div>
-      </div>
     </section>
+<!-- END OF WELCOME PAGE -->
 
-<!-- Scripts -->
-<script src="assets/js/bootstrap.js"></script>
-<script src="assets/js/jquery.min.js"></script>
+<!-- NAV BAR -->
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle Me!</span>
+                    <span class="glyphicon glyphicon-th-list"></span>
+                </button>
+                <a class="navbar-brand zoomIn animated" href="#cover">Kryss' Design</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="#About" class="zoomIn animated">About Me</a></li>
+                    <li><a href="#" class="zoomIn animated">Gallery</a></li>
+                    <li><a href="#" class="zoomIn animated">Services</a></li>
+                    <li><a href="#" class="zoomIn animated">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+<!-- END OF NAV BAR -->
+
+<!-- ABOUT ME STATEMENT -->
+    <div class="container">
+        <div class="col-md-12">
+            <div id="welcome"></div>
+                <p class="h2-statement">Simplicity &nbsp; can &nbsp; be &nbsp; Beautiful.</p>
+        </div>
+<!-- End OF ABOUT ME STATEMENT -->
+
+<!-- ABOUT ME SECTION -->
+    <section id="About">
+        <h3 style="intro-statement">About Me!</h3>
+            <div class="face-lockup">
+                <div class="icon fa fa-pencil fa-5x"></div>
+                <div class="icon fa fa-laptop fa-5x"></div>
+                <div class="face-image">
+                    <img src="test250.jpg" class="img-responsive" style="margin-left: 50px; margin-right: 50px;">
+                </div>
+                <div class="icon fa fa-code fa-5x"></div>
+                <div class="icon fa fa-server fa-5x"></div>
+            </div>
+
+        <p class="h4"><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong> Ipsa maxime error maiores magni odio distinctio nesciunt adipisci, nulla obcaecati,
+        cupiditate iusto, dignissimos repellat, asperiores. Inventore iure veniam rem hic fugiat!</p>
+
+    </section>
+<!-- END OF ABOUT ME SECTION -->
+
+<!-- FOOTER -->
+      <div class="navbar navbar-inverse navbar-static-bottom" style="padding-bottom: 0px; margin-bottom: 0px; border-radius: 0px; width:100%" role="navigation">
+          <div class="container-fluid">
+              <div class="navbar-text pull-left">
+                  <p>Kryss' Design 2016.</p>
+              </div>
+              <div class="navbar-text pull-right">
+                  <a href="#"><i class="fa fa-facebook-square fa-2x" style="padding-left: 20px;"></i></a>
+                  <a href="#"><i class="fa fa-twitter-square fa-2x" style="padding-left: 20px;"></i></a>
+                  <a href="#"><i class="fa fa-google-plus fa-2x" style="padding-left: 20px;"></i></a>
+              </div>
+          </div>
+      </div>
+<!-- END OF FOOTER -->
+
+<!-- test
+<div class="row">
+  <div class="col-md-6 span-6" style="align-items: center;">
+    <img class="img-responsive" src="test250.jpg" style="padding-left: 200px; padding-top: 50px;">
+  </div>
+  <div class="col-md-6 span-6">
+    <p class="h3" style="padding-right: 200px; padding-top: 50px;">Hello! I'm Kryss! Web design and development is something I love.</p>
+    <p class="description" style="padding-right: 200px; padding-top: 50px;">Whether you need a new website setup, or stylized to fit any occasion, I can help.</p>
+  </div>
+</div>
+</div> -->
+<!-- Scripts at the end to load the page faster -->
+<script src="assets/js/bootstrap.js"></script> <!-- Bootstrap -->
+<script src="assets/js/jquery.min.js"></script> <!-- jQuery -->
+<script src="https://use.fontawesome.com/607f7c0e54.js"></script> <!-- Font Awesome -->
 
 </body>
 </html>
