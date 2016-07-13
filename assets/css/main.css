@@ -26,9 +26,16 @@ body {
     box-shadow: 0px 37px 20px -20px rgba(0,0,0,0.2);
     transform: translate(0px, -10px);
 }
+.intro-statement {
+    font-size: 40px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    text-align: center;
+}
 /* End of Global Elements */
 /* ----------------------------------------------------------------------------------------------------------------------- */
-/* START OF LAND PAGE CODE */
+/* START OF LANDING PAGE CODE */
 
 /* Cover Landing */
 #cover {
@@ -97,6 +104,7 @@ body {
 .navType {
     font-size: 20px;
     text-decoration: none;
+    margin-right: 20px;
 }
 
 /* NavBar Brand Name */
@@ -149,7 +157,7 @@ body {
 .icon5 {order: 5;}
 
 /* About section small text */
-.intro-statement {
+.about-statement {
     padding-bottom: 50px;
     text-align: center;
     font-size: 40px;
@@ -273,11 +281,12 @@ body {
 #Gallery {
     background-image: url('http://www.inertdesign.com/wp-content/uploads/2016/03/apple-iphone-desk-office-1920x500.jpg');
     height: 45%;
-    background-size: center center;
     background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     text-align: center;
     display: flex;
+    margin-top: 80px;
     margin-bottom: 80px;
 }
 
@@ -292,21 +301,53 @@ body {
     justify-content: space-between;
 }
 .galImageSrc {
-    width: 500px;
+    max-width: 500px;
     height: 500px;
     padding: 20px;
     margin-left: 10px;
     margin-right: 10px;
 }
 
+.gallery-section .container {
+    max-width: 1400px;
+}
+
+.galText {
+    font-size: 18px;
+    display: flex;
+}
+
+.galP {
+  border: 2px solid #769FFF;
+  border-radius: 5px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.galContainer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+@media screen and (max-width: 1200px) {
+    .gallery-section .container {
+        width: 800px;
+    }
+    .galImageSrc {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
 /* END OF GALLERY SECTION CODE */
 /* ----------------------------------------------------------------------------------------------------------------------- */
 /* START OF SERVICE CODE */
+
 #Service {
     background-image: url('http://melbourneitsolutions.com.au/wp-content/uploads/2014/03/photo-1421757295538-9c80b0.jpg');
     height: 45%;
-    background-size: center center;
     background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     text-align: center;
     display: flex;
@@ -321,13 +362,14 @@ body {
 }
 
 /* END OF SERVICE CODE */
-
+/* ----------------------------------------------------------------------------------------------------------------------- */
 /* START OF CONTACT US CODE */
+
 #Contact {
-    background-image: url('http://www.thecinephilic.com/wp-content/uploads/2016/04/new-phone-1920x500.jpg');
+    background: url('http://www.thecinephilic.com/wp-content/uploads/2016/04/new-phone-1920x500.jpg') center center no-repeat;
     height: 45%;
-    background-size: center center;
     background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     text-align: center;
     display: flex;
@@ -341,6 +383,7 @@ body {
    width: 100%;
 }
 
+
 /* END OF CONTACT US CODE */
 /* ----------------------------------------------------------------------------------------------------------------------- */
 /* START OF FOOTER CODE */
@@ -349,10 +392,8 @@ body {
     padding-bottom: 0px;
     margin-bottom: 0px;
     border-radius: 0px;
+    margin-top: 20px;
     width: 100%;
-}
-.i {
-    color: #3B5998;
 }
 
 /* END OF FOOTER CODE */
