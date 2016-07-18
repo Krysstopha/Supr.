@@ -9,6 +9,10 @@ html,
 body {
     height: 100%;
 }
+i {
+    padding-left: 20px;
+    padding-top: 20px;
+}
 .btn-primary {
     background-color: #768FFF;
     box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
@@ -275,10 +279,10 @@ body {
 
 /* END OF SKILLS SECTION CODE */
 /* ----------------------------------------------------------------------------------------------------------------------- */
-/* START OF GALLERY SECTION CODE */
+/* START OF PORTFOLIO SECTION CODE */
 
-/* Main Gallery "Section" */
-#Gallery {
+/* Main Portfolio "Section" */
+#Portfolio {
     background-image: url('http://www.inertdesign.com/wp-content/uploads/2016/03/apple-iphone-desk-office-1920x500.jpg');
     height: 45%;
     background-repeat: no-repeat;
@@ -290,17 +294,13 @@ body {
     margin-bottom: 80px;
 }
 
-/* Gallery Section */
-#gallery-caption {
+/* Portfolio Section */
+#portfolio-caption {
    margin-top: 100px;
    width: 100%;
 }
-.galImageResize {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.galImageSrc {
+
+.imageSrc {
     max-width: 500px;
     height: 500px;
     padding: 20px;
@@ -308,38 +308,62 @@ body {
     margin-right: 10px;
 }
 
-.gallery-section .container {
-    max-width: 1400px;
+.display {
+    display: block;
 }
 
-.galText {
-    font-size: 18px;
-    display: flex;
+.portP {
+    border: 2px solid #769FFF;
+    border-radius: 5px;
+    margin-left: 2px;
+    margin-right: 2px;
+    width: 500px;
+    height: 500px;
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 50px;
 }
 
-.galP {
-  border: 2px solid #769FFF;
-  border-radius: 5px;
-  margin-left: 2px;
-  margin-right: 2px;
-}
-
-.galContainer {
+.portContainer {
     margin-top: 50px;
     margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 600px;
+    position: relative;
 }
 @media screen and (max-width: 1200px) {
-    .gallery-section .container {
+    .portContainer {
         width: 800px;
     }
-    .galImageSrc {
+    .imageSrc {
         width: 300px;
         height: 300px;
     }
 }
-
-
-/* END OF GALLERY SECTION CODE */
+@media screen and (max-width: 800px) {
+    .portContainer {
+        width: 600px;
+        height: 400px;
+    }
+    .imageSrc {
+        width: 250px;
+        height: 250px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .portfolio-section .container {
+        width: 400px;
+        height: 400px;
+    }
+    .portContainer {
+        display: block;
+        align-items: center;
+    }
+}
+/* END OF PORTFOLIO SECTION CODE */
 /* ----------------------------------------------------------------------------------------------------------------------- */
 /* START OF SERVICE CODE */
 
@@ -360,7 +384,90 @@ body {
    margin-top: 100px;
    width: 100%;
 }
+/* Ability Container */
+.abilContainer {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
+/* Service Card */
+.ability {
+    width: 300px;
+    height: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: transparent;
+    margin: 0 auto;
+    padding: 40px;
+    box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
+    transition: all ease-in-out 400ms;
+}
+
+/* Service Card Hover */
+.ability:hover {
+    box-shadow: 0px 37px 20px -20px rgba(0,0,0,0.2);
+    transform: translate(0px, -10px);
+}
+
+/* Price Value */
+.serSpan {
+    font-size: 80px;
+    text-align: center;
+}
+
+/* Service smallfont 'from' */
+.serNum {
+    font-size: 10px;
+}
+
+/* Service Package Type */
+.serStatement {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Service Attributes list */
+.serTable {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-position: inside;
+    list-style-type: none;
+}
+
+/* Service Attribute list items */
+.serItem {
+    font-size: 18px;
+    text-align: center;
+    line-height: 180%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-position: inside;
+    list-style-type: none;
+}
+.serBtn {
+    text-align: center;
+}
+.btn-enquire {
+    background-color: #769FFF;
+    border-radius: 3px;
+    color: white;
+    font-size: 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+
+.btn-enquire:hover {
+    color: white;
+}
 /* END OF SERVICE CODE */
 /* ----------------------------------------------------------------------------------------------------------------------- */
 /* START OF CONTACT US CODE */
