@@ -1,8 +1,5 @@
 $(document).ready(function(){
-    $('.imageSrc:first').hover(function(){
-      $('.portP:first').toggle();
-    });
-    $('.imageSrc:last').hover(function(){
-      $('.portP:last').toggle()
+    $('.imageSrc:first').bind('click', function(){
+      $('.portP:first').fadeIn(500);
     });
 });

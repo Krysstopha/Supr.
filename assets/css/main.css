@@ -317,12 +317,7 @@ i {
     border-radius: 5px;
     margin-left: 2px;
     margin-right: 2px;
-    width: 500px;
-    height: 500px;
     display: none;
-    position: absolute;
-    top: 50px;
-    left: 50px;
 }
 
 .portContainer {
@@ -332,7 +327,6 @@ i {
     align-items: center;
     justify-content: space-between;
     height: 600px;
-    position: relative;
 }
 @media screen and (max-width: 1200px) {
     .portContainer {
