@@ -1,5 +1,12 @@
 $(document).ready(function(){
-    $('.imageSrc:first').bind('click', function(){
-      $('.portP:first').fadeIn(500);
-    });
+
+  $('imageSrc:first').hover(
+    function(){
+        $('portP:first').css('display', 'flex');
+    },
+    function(){
+        $('portP:first').css('display', 'none');
+    }
+  );
+
 });
