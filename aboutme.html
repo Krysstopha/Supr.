@@ -14,13 +14,39 @@
     <link href="assets/css/animate.css" rel="stylesheet">
     <!-- Favicon Element -->
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
+      <script src="assets/js/angular.min.js"></script>
   </head>
-<body>
+<body np-app="myApp">
     <h1>Under Construction</h1>
+    <div class="service-section">
+        <div class="container">
+            <p class="intro-statement">{{ intro }}</p>
+                <div class="abilContainer" ng-controller="MainController">
+                    <div ng-repeat="x in products" class="ability">
+                        <span class="serSpan">{{ product.price }}<span class="serNum">From</span></span>
+                        <h1 class="serStatement">{{ product.name }}</h1>
+                            <ul class="serTable">
+                                <li class="serItem">{{ product.itemF }}</li>
+                                <li class="serItem">{{ product.itemR }}</li>
+                                <li class="serItem">{{ product.itemC }}</li>
+                                <li class="serItem">{{ product.itemH }}</li>
+                                <li class="serItem" style="border-bottom: 1px solid #ccc; padding-bottom: 10px;">&nbsp;</li>
+                            </ul>
+                    </div>
+                <div class="button-centering">
+                </div>
+                <a href="services.html" class="btn btn-lg btn-primary">Learn More!</a>
+                </div>
+        </div>
+    </div>
   <!-- Scripts at the end to load the page faster -->
   <script src="assets/js/bootstrap.js"></script> <!-- Bootstrap -->
   <script src="assets/js/jquery.min.js"></script> <!-- jQuery -->
-  <script src="https://use.fontawesome.com/607f7c0e54.js"></script> <!-- Font Awesome -->
+  <script src="https://use.fontawesome.com/607f7c0e54.js"></script> <!-- Font Awesome --> <!-- AngularJS -->
+  <script src="assets/js/functions.js"></script> <!-- My JS -->
+  <script src="assets/js/maincontroller.js"></script> <!-- Main Controller -->
+  <script src="assets/js/app.js"></script> <!-- Main App -->
+
 
 </body>
 </html>

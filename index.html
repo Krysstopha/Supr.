@@ -6,13 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Title -->
     <title>Kryss' Designs</title>
-    <!-- Links -->
     <!-- Bootstrap First! -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <!-- Then main stylesheets -->
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/animate.css" rel="stylesheet">
-    <link href="assets/css/email.css" rel="stylesheet">
     <!-- Favicon Element -->
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
   </head>
@@ -25,7 +23,7 @@
                     <h1 class="cover-title zoomIn animated">Kryss' Designs</h1>
                     <p class="kicker zoomIn animated">Designer <span class="slash">//</span>
                       Creator <span class="slash">//</span> Presentor</p>
-                    <a href="#About" role="button" class="btn btn-default btn-sm">              <!-- ADD LINK! -->
+                    <a href="#About" role="button" class="btn btn-default btn-sm">
                     <span class="glyphicon glyphicon-chevron-down" style="color: #769FFF; font-size: 25px; padding: 5px 7px"></span>
                   </a>
                 </div>
@@ -38,7 +36,7 @@
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Navigation Bar</span>
+                <span class="sr-only">Navigation Bar</span>                                <!-- Add functionality to Mobile NavBar! -->
                 <span class="glyphicon glyphicon-th-list" style="font-size: 25px;"></span>
             </button>
             <a class="navbar-brand zoomIn animated" href="#cover">Kryss' Designs</a>
@@ -177,52 +175,26 @@
             </div>
         </div>
     </section>
-    <div class="service-section">
-        <div class="container">
-            <p class="intro-statement">About my Web Services.</p>
+<!-- AngularJS Store -->
+    <div class="service-section" ng-app="myApp">
+        <div class="container" ng-controller="myCtrl">
+            <p class="intro-statement">{{ intro }}</p>
                 <div class="abilContainer">
-                    <div class="ability">
-                        <span class="serSpan">$220<span class="serNum">From</span></span>
-                        <h1 class="serStatement">Standard Package</h1>
+                    <div ng-repeat="x in product" class="ability">
+                        <span class="serSpan">{{ x.price | currency}}<span class="serNum">From</span></span>
+                        <h1 class="serStatement">{{ x.name }}</h1>
                             <ul class="serTable">
-                                <li class="serItem">Full functionality website</li>
-                                <li class="serItem">Responsive Design</li>
-                                <li class="serItem">CMS</li>
-                                <li class="serItem">Help with deployment</li>
+                                <li class="serItem">{{ x.itemF }}</li>
+                                <li class="serItem">{{ x.itemR }}</li>
+                                <li class="serItem">{{ x.itemC }}</li>
+                                <li class="serItem">{{ x.itemH }}</li>
                                 <li class="serItem" style="border-bottom: 1px solid #ccc; padding-bottom: 10px;">&nbsp;</li>
                             </ul>
                             <div class="serBtn">
                                 <a href="" class="btn btn-enquire">Discover</a>
                             </div>
-                            </div>
-                            <div class="ability col-md-4">
-                                <span class="serSpan">$300<span class="serNum">From</span></span>
-                                <h1 class="serStatement"><span class="glyphicon glyphicon-pencil"></span>Creative Package</h1>
-                                <ul class="serTable">
-                                    <li class="serItem">Full functionality website</li>
-                                    <li class="serItem">Responsive Design</li>
-                                    <li class="serItem">CMS</li>
-                                    <li class="serItem">Help with deployment</li>
-                                    <li class="serItem" style="border-bottom: 1px solid #ccc; padding-bottom: 10px;">&nbsp;</li>
-                                </ul>
-                                <div class="serBtn">
-                                    <a href="" class="btn btn-enquire">Discover</a>
-                                </div>
-                            </div>
-                            <div class="ability col-md-4">
-                                <span class="serSpan">$450<span class="serNum">From</span></span>
-                                <h1 class="serStatement"><span class="glyphicon glyphicon-usd"></span>Business Package</h1>
-                                <ul class="serTable">
-                                    <li class="serItem">Full functionality website</li>
-                                    <li class="serItem">Responsive Design</li>
-                                    <li class="serItem">CMS</li>
-                                    <li class="serItem">Help with deployment</li>
-                                    <li class="serItem" style="border-bottom: 1px solid #ccc; padding-bottom: 10px;">eCommerce</li>
-                                </ul>
-                                <div class="serBtn">
-                                    <a href="" class="btn btn-enquire">Discover</a>
-                                </div>
-                            </div>
+                    </div>
+<!-- End of AngularJS Store -->
                 </div>
                 <div class="button-centering">
                     <a href="services.html" class="btn btn-lg btn-primary">Learn More!</a>
@@ -240,17 +212,18 @@
                     <p class="kicker zoomIn animated">Communication at its finest.</p>
                     </a>
                 </div>
-                <div class="pre-header">
-                    A long time ago you signed up to learn about a music app
-                    I designed for iOS, I have some news for you :)k
-                </div>
-                <div class="email-container">
-
-                    <h1>Quick and easy way to get in touch</h1>
-
-
-
-                </div>
+            </div>
+            <div class="email-container">
+                <form action="action_page.php">
+                    <h1 class="introStateCont">Contact Details:</h1>
+                    <p class="footP">First name:</p>
+                    <input type="text" name="firstname" value="" class="contInput"><br>
+                    <p class="footP">Last name:</p>
+                    <input type="text" name="lastname" value="" class="contInput"><br>
+                    <p class="footP">Message:</p>
+                    <textarea name="message" value="" class="contInput" col="120" rows="10"></textarea><br><br>
+                    <input type="submit" value="Submit">
+                </form>
             </div>
             <div class="button-centering">
                 <a href="contact.html" class="btn btn-lg btn-primary">Learn More!</a>
@@ -259,7 +232,6 @@
     </section>
 <!-- END OF CONTACT US -->
 
-
 <!-- FOOTER -->
       <div class="navbar navbar-inverse navbar-static-bottom footerBar" role="navigation">
           <div class="container-fluid">
@@ -267,9 +239,9 @@
                   <p>Kryss' Design © 2016</p>
               </div>
               <div class="navbar-text pull-right">
-                  <a href="#" target="_blank"><i class="fa fa-facebook-square fa-2x" style="padding-left: 20px; color: #3B5998"></i></a>
-                  <a href="https://twitter.com/Krysstopha" target="_blank"><i class="fa fa-twitter-square fa-2x" style="padding-left: 20px; color: #55ACEE"></i></a>
-                  <a href="https://plus.google.com/u/1/100123363922120158978" target="_blank"><i class="fa fa-google-plus fa-2x" style="padding-left: 20px; color: #dd4b39"></i></a>
+                  <a href="#" target="_blank"><i class="fa fa-facebook-square fa-2x faFooter" style="color: #3B5998"></i></a>
+                  <a href="https://twitter.com/Krysstopha" target="_blank"><i class="fa fa-twitter-square fa-2x faFooter" style="color: #55ACEE"></i></a>
+                  <a href="https://plus.google.com/u/1/100123363922120158978" target="_blank"><i class="fa fa-google-plus fa-2x faFooter" style="color: #dd4b39"></i></a>
               </div>
           </div>
       </div>
@@ -279,7 +251,10 @@
 <script src="assets/js/bootstrap.js"></script> <!-- Bootstrap -->
 <script src="assets/js/jquery.min.js"></script> <!-- jQuery -->
 <script src="https://use.fontawesome.com/607f7c0e54.js"></script> <!-- Font Awesome -->
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script> <!-- AngularJS -->
 <script src="assets/js/functions.js"></script> <!-- My JS -->
+<script src="assets/js/MainController.js"></script> <!-- Main Controller -->
+<script src="assets/js/app.js"></script> <!-- Main App -->
 
 </body>
 </html>

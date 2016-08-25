@@ -1,3 +1,7 @@
+/* ----------------------------------------------------------------------------------------------------------------------- */
+/* START OF CODE */
+
+/* Fonts */
 @import url(https://fonts.googleapis.com/css?family=Lato);
 /* Global Attributes */
 * {
@@ -408,7 +412,7 @@ i {
 
 /* Price Value */
 .serSpan {
-    font-size: 80px;
+    font-size: 60px;
     text-align: center;
 }
 
@@ -461,6 +465,7 @@ i {
 
 .btn-enquire:hover {
     color: white;
+    box-shadow: 0px 37px 20px -20px rgba(0,0,0,0.2);
 }
 /* END OF SERVICE CODE */
 /* ----------------------------------------------------------------------------------------------------------------------- */
@@ -484,17 +489,64 @@ i {
    width: 100%;
 }
 
+/* Contact form */
+.email-container {
+    max-width: 600px;
+    border: 2px solid #769FFF;
+    border-radius: 12px;
+    margin: 0 auto;
+    margin-top: 200px;
+    margin-bottom: 100px;
+}
+
+/* Form titles */
+.footP {
+    color: #ccc;
+    border-radius: 25%;
+}
+
+/* Contact intro statement */
+.introStateCont {
+    font-size: 40px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    text-align: center;
+    color: black;
+}
+
+/* Contact form inputs */
+.contInput {
+    color: black;
+}
 
 /* END OF CONTACT US CODE */
 /* ----------------------------------------------------------------------------------------------------------------------- */
 /* START OF FOOTER CODE */
 
+/* Footer NavBar */
 .footerBar {
     padding-bottom: 0px;
     margin-bottom: 0px;
     border-radius: 0px;
-    margin-top: 20px;
+    border-bottom: 0px;
+    margin-top: 900px;
     width: 100%;
+    height: 100px;
+}
+
+/* Footer P */
+.footP {
+    font-size: 20px;
+    color: #ccc;
+}
+
+.faFooter {
+    padding-left: 20px;
+
 }
 
 /* END OF FOOTER CODE */
+
+/* END OF CODE */
+/* ----------------------------------------------------------------------------------------------------------------------- */
