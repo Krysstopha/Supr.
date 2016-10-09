@@ -5,7 +5,7 @@
     <meta content="text/html; charset=utf-8" http-equiv="Content-type">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Title -->
-    <title>Kryss' Designs</title>
+    <title>Khryss' Designs</title>
     <!-- Bootstrap First! -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <!-- Then main stylesheets -->
@@ -14,15 +14,15 @@
     <!-- Favicon Element -->
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
   </head>
-<body>
-<!-- WELCOME PAGE -->
+<body ng-app="myApp" ng-controller="myCtrl">
+<!-- LANDING PAGE -->
     <section id="cover">
         <div id="cover-caption">
             <div class="container">
                 <div class="col-sm-10 col-sm-offset-1">
-                    <h1 class="cover-title zoomIn animated">Kryss' Designs</h1>
+                    <h1 class="cover-title zoomIn animated">Khryss' Designs</h1>
                     <p class="kicker zoomIn animated">Designer <span class="slash">//</span>
-                      Creator <span class="slash">//</span> Presentor</p>
+                      Developer <span class="slash">//</span> Presentor</p>
                     <a href="#About" role="button" class="btn btn-default btn-sm">
                     <span class="glyphicon glyphicon-chevron-down" style="color: #769FFF; font-size: 25px; padding: 5px 7px"></span>
                   </a>
@@ -30,7 +30,7 @@
             </div>
         </div>
     </section>
-<!-- END OF WELCOME PAGE -->
+<!-- END OF LANDING PAGE -->
 
 <!-- NAV BAR -->
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -39,12 +39,12 @@
                 <span class="sr-only">Navigation Bar</span>                                <!-- Add functionality to Mobile NavBar! -->
                 <span class="glyphicon glyphicon-th-list" style="font-size: 25px;"></span>
             </button>
-            <a class="navbar-brand zoomIn animated" href="#cover">Kryss' Designs</a>
+            <a class="navbar-brand zoomIn animated" href="#cover">Khryss' Designs</a>
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
                 <li><a href="aboutme.html" class="navType zoomIn animated">About Me</a></li>
-                <li><a href="gallery.html" class="navType zoomIn animated">Portfolio</a></li>
+                <li><a href="portfolio.html" class="navType zoomIn animated">Portfolio</a></li>
                 <li><a href="services.html" class="navType zoomIn animated">Services</a></li>
                 <li><a href="contact.html" class="navType zoomIn animated">Contact Me</a></li>
             </ul>
@@ -55,22 +55,22 @@
 <!-- START OF ABOUT ME STATEMENT -->
     <div class="container">
         <div class="col-md-12">
-            <p class="h2-statement">Simplicity &nbsp; can &nbsp; be &nbsp; Beautiful.</p>
+            <p class="h2-statement">Complex &nbsp; Simplicity &nbsp; is &nbsp; the&nbsp; best &nbsp; Simplicity.</p>
         </div>
     </div>
     <section id="About">
         <p class="about-statement">About Me!</p>
             <div class="face-lockup">
-                <div class="icon3"><img src="imgs/test250.jpg" class="face-image"></div>
+                <div class="icon3"><img src="imgs/chris1.jpg" class="faceImage"></div>
                 <div class="icon1 about-icon glyphicon glyphicon-tasks"></div>
                 <div class="icon2 about-icon glyphicon glyphicon-pencil"></div>
                 <div class="icon4 about-icon glyphicon glyphicon-file"></div>
                 <div class="icon5 about-icon glyphicon glyphicon-link"></div>
             </div>
             <div class="blurb">
-                <p><strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</strong>
-                  Ipsa maxime error maiores magni odio distinctio nesciunt adipisci, nulla obcaecati,
-                cupiditate iusto, dignissimos repellat, asperiores. Inventore iure veniam rem hic fugiat!</p>
+                <p><strong>I am Christopher, a freelance Web Developer for you.</strong><br>
+                I specialise in creating websites that provide awe, and perform just as well.
+              My goal is to provide such services at a reasonable price, and at an impressive standard.</p>
             </div>
 
             <div class="skill-lockup">
@@ -135,26 +135,12 @@
             </div>
         </div>
     </section>
-    <div class="portfolio-section">
-        <div class="container">
+    <div class="portfolio-section" ng-app="portApp">
+        <div class="container" np-controller="portCtrl">
             <p class="intro-statement">A showcase of my work.</p>
-                <div class="portContainer">
-                    <img src="imgs/kryssdesign.jpg" class="imageSrc img-responsive">
-                    <p class="portP">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                      do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                      Ut enim ad minim veniam, quis nostrud exercitation ullamco labo
-                      ris nisi ut aliquip ex ea commodo consequat. Duis aute irure dol
-                      or in reprehenderit in voluptate velit esse cillum dolore eu fug
-                      iat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                      sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    <img src="imgs/services.jpg" class="imageSrc img-responsive">
-                    <p class="portP">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                      do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                      Ut enim ad minim veniam, quis nostrud exercitation ullamco labo
-                      ris nisi ut aliquip ex ea commodo consequat. Duis aute irure dol
-                      or in reprehenderit in voluptate velit esse cillum dolore eu fug
-                      iat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                      sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="portContainer" ng-repeat="x in portfolio">
+                    <img src="{{ x.img }}" class="imageSrc img-responsive">
+                    <p class="portP">{{ x.info }}</p>
                 </div>
                 <div class="button-centering">
                     <a href="portfolio.html" class="btn btn-lg btn-primary">Learn More!</a>
@@ -176,23 +162,24 @@
         </div>
     </section>
 <!-- AngularJS Store -->
-    <div class="service-section" ng-app="myApp">
-        <div class="container" ng-controller="myCtrl">
+    <div class="service-section">
+        <div class="container">
             <p class="intro-statement">{{ intro }}</p>
-                <div class="abilContainer">
-                    <div ng-repeat="x in product" class="ability">
+                <div class="abilContainer" >
+                    <div class="ability" ng-repeat="x in product">
                         <span class="serSpan">{{ x.price | currency}}<span class="serNum">From</span></span>
-                        <h1 class="serStatement">{{ x.name }}</h1>
+                        <h1 class="serStatement"><strong>{{ x.name }}</strong></h1>
                             <ul class="serTable">
-                                <li class="serItem">{{ x.itemF }}</li>
-                                <li class="serItem">{{ x.itemR }}</li>
-                                <li class="serItem">{{ x.itemC }}</li>
-                                <li class="serItem">{{ x.itemH }}</li>
-                                <li class="serItem" style="border-bottom: 1px solid #ccc; padding-bottom: 10px;">&nbsp;</li>
+                                <li class="serItem">{{ x.item1 }}</li>
+                                <li class="serItem">{{ x.item2 }}</li>
+                                <li class="serItem">{{ x.item3 }}</li>
+                                <li class="serItem">{{ x.item4 }}</li>
+                                <li class="serItem" style="margin-bottom: 10px;">{{ x.item5 }}</li>
+                                <li class="serItem" style="border-top: 1px solid #ccc; padding-bottom: 10px;">&nbsp;</li>
                             </ul>
-                            <div class="serBtn">
+                          <!--   <div class="serBtn">
                                 <a href="" class="btn btn-enquire">Discover</a>
-                            </div>
+                            </div> -->
                     </div>
 <!-- End of AngularJS Store -->
                 </div>
@@ -213,17 +200,10 @@
                     </a>
                 </div>
             </div>
-            <div class="email-container">
-                <form action="action_page.php">
-                    <h1 class="introStateCont">Contact Details:</h1>
-                    <p class="footP">First name:</p>
-                    <input type="text" name="firstname" value="" class="contInput"><br>
-                    <p class="footP">Last name:</p>
-                    <input type="text" name="lastname" value="" class="contInput"><br>
-                    <p class="footP">Message:</p>
-                    <textarea name="message" value="" class="contInput" col="120" rows="10"></textarea><br><br>
-                    <input type="submit" value="Submit">
-                </form>
+            <div class="contactNote">
+              <p>Email is a fast and simple way to contact me, in any amount of detail. <br>
+                 I strive to reply within a reasonable time frame.<br>
+                 My email: christopherdedes2906@gmail.com
             </div>
             <div class="button-centering">
                 <a href="contact.html" class="btn btn-lg btn-primary">Learn More!</a>
@@ -236,7 +216,7 @@
       <div class="navbar navbar-inverse navbar-static-bottom footerBar" role="navigation">
           <div class="container-fluid">
               <div class="navbar-text pull-left">
-                  <p>Kryss' Design © 2016</p>
+                  <p class="footerNote">Kryss' Design © 2016</p>
               </div>
               <div class="navbar-text pull-right">
                   <a href="#" target="_blank"><i class="fa fa-facebook-square fa-2x faFooter" style="color: #3B5998"></i></a>
@@ -251,10 +231,9 @@
 <script src="assets/js/bootstrap.js"></script> <!-- Bootstrap -->
 <script src="assets/js/jquery.min.js"></script> <!-- jQuery -->
 <script src="https://use.fontawesome.com/607f7c0e54.js"></script> <!-- Font Awesome -->
-<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script> <!-- AngularJS -->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script> <!-- AngularJS -->
 <script src="assets/js/functions.js"></script> <!-- My JS -->
 <script src="assets/js/MainController.js"></script> <!-- Main Controller -->
-<script src="assets/js/app.js"></script> <!-- Main App -->
 
 </body>
 </html>

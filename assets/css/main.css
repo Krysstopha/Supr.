@@ -6,12 +6,14 @@
 /* Global Attributes */
 * {
     font-family: 'Lato', sans-serif;
+    color: #3A3D41;
 }
 
 /* CSS Elements that are used Globally */
 html,
 body {
     height: 100%;
+    background-color: #f5f6f7;
 }
 i {
     padding-left: 20px;
@@ -67,6 +69,7 @@ i {
     border-bottom: 12px solid #769FFF;
     border-radius: 10px;
     padding-bottom: 5px;
+    color: #FFFFF0;
 }
 
 /* Kicker on Welcome Page */
@@ -75,13 +78,14 @@ i {
     -webkit-animation-delay: 0.6s;
     -o-animation-delay: 0.6s;
     animation-delay: 0.6s;
+    color: #FFFFF0;
 }
 
 /* Slashes in kicker */
 .slash {
     color: #769FFF;
 }
-@media screen and (max-width: 995px;) {
+@media screen and (max-width: 995px) {
     .cover-title {
         font-size: 60px;
     }
@@ -164,6 +168,10 @@ i {
 .icon4 {order: 4;}
 .icon5 {order: 5;}
 
+.icon3 {
+    border: 2px solid #ccc;
+    box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
+}
 /* About section small text */
 .about-statement {
     padding-bottom: 50px;
@@ -180,7 +188,7 @@ i {
         font-size: 30px;
         padding: 10px;
     }
-    .face-image {
+    .faceImage {
         margin-bottom: 30px;
         justify-content: center;
         background-position: center center;
@@ -490,13 +498,11 @@ i {
 }
 
 /* Contact form */
-.email-container {
-    max-width: 600px;
-    border: 2px solid #769FFF;
-    border-radius: 12px;
+.contactNote {
+    max-width: 900px;
     margin: 0 auto;
     margin-top: 200px;
-    margin-bottom: 100px;
+    font-size: 24px;
 }
 
 /* Form titles */
@@ -530,7 +536,7 @@ i {
     margin-bottom: 0px;
     border-radius: 0px;
     border-bottom: 0px;
-    margin-top: 900px;
+    margin-top: 400px;
     width: 100%;
     height: 100px;
 }
@@ -541,9 +547,14 @@ i {
     color: #ccc;
 }
 
+/* Icons in footer */
 .faFooter {
     padding-left: 20px;
+}
 
+/* Copyright Note */
+.footerNote {
+    color: #FFFFF0;
 }
 
 /* END OF FOOTER CODE */
