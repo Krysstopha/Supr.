@@ -3,7 +3,7 @@ app.controller('myCtrl', function($scope) {
   $scope.intro = 'Price guide for my personalised Web Services.';
   $scope.product = [
     {
-      name: 'Website Package',
+      name: 'Standard Package',
       price: 329.99,
       item1: 'Full functionality website',
       item2: 'Responsive Design',
@@ -25,6 +25,15 @@ app.controller('myCtrl', function($scope) {
       item3: 'CMS',
       item4: 'Help with deployment and domain',
       item5: 'Online Shopping Integration',
+    },
+    {
+      name: 'Special Package',
+      price: 749.99,
+      item1: 'Full functionality',
+      item2: 'Responsive Desgin',
+      item3: 'CMS',
+      item4: 'Help with deployment and domain',
+      item5: 'Specifics you wish to be implemented',
     }
   ];
 });

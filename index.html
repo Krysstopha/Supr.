@@ -14,7 +14,7 @@
     <!-- Favicon Element -->
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
   </head>
-<body ng-app="myApp" ng-controller="myCtrl">
+<body ng-app="myApp" ng-controller="myCtrl" ng-app="portApp" np-controller="portCtrl">
 <!-- LANDING PAGE -->
     <section id="cover">
         <div id="cover-caption">
@@ -83,7 +83,7 @@
                     </div>
                     <div class="skill-unit">
                         <div class="skill-label">Planning</div>
-                        <div class="skill-icon rating-7">
+                        <div class="skill-icon rating-8">
                             <span></span><span></span><span></span><span></span><span></span>
                             <span></span><span></span><span></span><span></span><span></span>
                         </div>
@@ -111,7 +111,7 @@
                     </div>
                     <div class="skill-unit">
                         <div class="skill-label">Communication</div>
-                        <div class="skill-icon rating-8">
+                        <div class="skill-icon rating-9">
                             <span></span><span></span><span></span><span></span><span></span>
                             <span></span><span></span><span></span><span></span><span></span>
                         </div>
@@ -135,8 +135,8 @@
             </div>
         </div>
     </section>
-    <div class="portfolio-section" ng-app="portApp">
-        <div class="container" np-controller="portCtrl">
+    <div class="portfolio-section">
+        <div class="container">
             <p class="intro-statement">A showcase of my work.</p>
                 <div class="portContainer" ng-repeat="x in portfolio">
                     <img src="{{ x.img }}" class="imageSrc img-responsive">
@@ -163,7 +163,7 @@
     </section>
 <!-- AngularJS Store -->
     <div class="service-section">
-        <div class="container">
+        <div class="container-fluid">
             <p class="intro-statement">{{ intro }}</p>
                 <div class="abilContainer" >
                     <div class="ability" ng-repeat="x in product">
@@ -234,6 +234,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script> <!-- AngularJS -->
 <script src="assets/js/functions.js"></script> <!-- My JS -->
 <script src="assets/js/MainController.js"></script> <!-- Main Controller -->
+<script src="assets/js/portfolio.js"></script> <!-- Portfolio AngularJS -->
 
 </body>
 </html>

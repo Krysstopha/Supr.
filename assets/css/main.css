@@ -268,10 +268,10 @@ i {
 
 }
 
-.rating-8 > span:nth-child(n+9) {
+.rating-9 > span:nth-child(n+10) {
     background-color: #E5EAFF;
 }
-.rating-9 > span:nth-child(n+10) {
+.rating-8 > span:nth-child(n+9) {
     background-color: #E5EAFF;
 }
 .rating-7 > span:nth-child(n+8) {
@@ -392,11 +392,13 @@ i {
 }
 /* Ability Container */
 .abilContainer {
-    max-width: 1200px;
+    max-width: 1400px;
     display: flex;
     justify-content: space-between;
     padding-top: 50px;
     padding-bottom: 50px;
+    background-color: pink;
+    margin-left: 260px;
 }
 
 /* Service Card */
@@ -474,6 +476,20 @@ i {
 .btn-enquire:hover {
     color: white;
     box-shadow: 0px 37px 20px -20px rgba(0,0,0,0.2);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 780px) {
+    .abilcontainer {
+        width: 500px;
+    }
+    .ability {
+        width: 150px;
+        height: 250px;
+        margin: 0 auto;
+        padding: 20px; 
+    }
 }
 /* END OF SERVICE CODE */
 /* ----------------------------------------------------------------------------------------------------------------------- */
