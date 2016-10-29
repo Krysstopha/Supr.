@@ -14,7 +14,7 @@
     <!-- Favicon Element -->
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
   </head>
-<body ng-app="myApp" ng-controller="myCtrl" ng-app="portApp" np-controller="portCtrl">
+<body ng-app="myApp" ng-controller="myCtrl">
 <!-- LANDING PAGE -->
     <section id="cover">
         <div id="cover-caption">
@@ -23,9 +23,9 @@
                     <h1 class="cover-title zoomIn animated">Khryss' Designs</h1>
                     <p class="kicker zoomIn animated">Designer <span class="slash">//</span>
                       Developer <span class="slash">//</span> Presentor</p>
-                    <a href="#About" role="button" class="btn btn-default btn-sm">
+                    <button href="#About" role="button" class="btn btn-default btn-sm">
                     <span class="glyphicon glyphicon-chevron-down" style="color: #769FFF; font-size: 25px; padding: 5px 7px"></span>
-                  </a>
+                    </button>
                 </div>
             </div>
         </div>
@@ -55,7 +55,7 @@
 <!-- START OF ABOUT ME STATEMENT -->
     <div class="container">
         <div class="col-md-12">
-            <p class="h2-statement">Complex &nbsp; Simplicity &nbsp; is &nbsp; the&nbsp; best &nbsp; Simplicity.</p>
+            <p class="intro-statement">Complex &nbsp; Simplicity &nbsp; Is&nbsp; Key.</p>
         </div>
     </div>
     <section id="About">
@@ -137,10 +137,11 @@
     </section>
     <div class="portfolio-section">
         <div class="container">
-            <p class="intro-statement">A showcase of my work.</p>
+            <p class="intro-statement">A Showcase Of My Work.</p>
                 <div class="portContainer" ng-repeat="x in portfolio">
-                    <img src="{{ x.img }}" class="imageSrc img-responsive">
-                    <p class="portP">{{ x.info }}</p>
+                    <h1 class="portTitle">{{ x.title }}</h1>
+                    <img ng-src="{{ x.image }}" class="imageSrc img-responsive" id="test">
+                    <p class="portPara">{{ x.para}}</p>
                 </div>
                 <div class="button-centering">
                     <a href="portfolio.html" class="btn btn-lg btn-primary">Learn More!</a>
@@ -155,7 +156,7 @@
             <div class="container">
                 <div class="col-sm-10 col-sm-offset-1">
                     <h1 class="cover-title zoomIn animated">Services</h1>
-                    <p class="kicker zoomIn animated">Built to Perfection.</p>
+                    <p class="kicker zoomIn animated">Built To Perfection.</p>
                     </a>
                 </div>
             </div>
@@ -196,7 +197,7 @@
             <div class="container">
                 <div class="col-sm-10 col-sm-offset-1">
                     <h1 class="cover-title zoomIn animated">Contact Me</h1>
-                    <p class="kicker zoomIn animated">Communication at its finest.</p>
+                    <p class="kicker zoomIn animated">Communication At Its Finest.</p>
                     </a>
                 </div>
             </div>
@@ -228,13 +229,12 @@
 <!-- END OF FOOTER -->
 
 <!-- Scripts at the end to load the page faster -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> <!-- jQuery -->
 <script src="assets/js/bootstrap.js"></script> <!-- Bootstrap -->
-<script src="assets/js/jquery.min.js"></script> <!-- jQuery -->
 <script src="https://use.fontawesome.com/607f7c0e54.js"></script> <!-- Font Awesome -->
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script> <!-- AngularJS -->
 <script src="assets/js/functions.js"></script> <!-- My JS -->
 <script src="assets/js/MainController.js"></script> <!-- Main Controller -->
-<script src="assets/js/portfolio.js"></script> <!-- Portfolio AngularJS -->
 
 </body>
 </html>

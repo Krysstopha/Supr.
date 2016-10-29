@@ -1,12 +1,8 @@
 $(document).ready(function(){
-
-  $('imageSrc:first').hover(
-    function(){
-        $('portP:first').css('display', 'flex');
-    });,
-    function(){
-        $('portP:first').css('display', 'none');
-    }
-  );
-
+  $("#test").click(function(){
+    console.log("falg");
+    $(this).animate({
+      left: "-=500px"
+    }, 500);
+  });
 });

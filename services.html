@@ -35,36 +35,49 @@
           </div>
       </div>
   <!-- END OF NAV BAR -->
-  <!-- AngularJS Store -->
-  <div class="service-section">
-      <div class="container">
-          <p class="intro-statement">{{ intro }}</p>
-              <div class="abilContainer" >
-                  <div class="ability" ng-repeat="x in product">
-                      <span class="serSpan">{{ x.price | currency}}<span class="serNum">From</span></span>
-                      <h1 class="serStatement"><strong>{{ x.name }}</strong></h1>
-                          <ul class="serTable">
-                              <li class="serItem">{{ x.item1 }}</li>
-                              <li class="serItem">{{ x.item2 }}</li>
-                              <li class="serItem">{{ x.item3 }}</li>
-                              <li class="serItem">{{ x.item4 }}</li>
-                              <li class="serItem" style="margin-bottom: 10px;">{{ x.item5 }}</li>
-                              <li class="serItem" style="border-top: 1px solid #ccc; padding-bottom: 10px;">&nbsp;</li>
-                          </ul>
-                        <!--   <div class="serBtn">
-                              <a href="" class="btn btn-enquire">Discover</a>
-                          </div> -->
+  <!-- START OF SERVICES -->
+      <section id="Service">
+          <div id="service-caption">
+              <div class="container">
+                  <div class="col-sm-10 col-sm-offset-1">
+                      <h1 class="cover-title zoomIn animated">Services</h1>
+                      <p class="kicker zoomIn animated">Built to Perfection.</p>
+                      </a>
                   </div>
-<!-- End of AngularJS Store -->
               </div>
-              <div class="button-centering">
-                  <a href="services.html" class="btn btn-lg btn-primary">Learn More!</a>
-              </div>
+          </div>
+      </section>
+  <!-- AngularJS Store -->
+      <div class="service-section">
+          <div class="container-fluid">
+              <p class="intro-statement">{{ intro }}</p>
+                  <div class="abilContainer" >
+                      <div class="ability" ng-repeat="x in product">
+                          <span class="serSpan">{{ x.price | currency}}<span class="serNum">From</span></span>
+                          <h1 class="serStatement"><strong>{{ x.name }}</strong></h1>
+                              <ul class="serTable">
+                                  <li class="serItem">{{ x.item1 }}</li>
+                                  <li class="serItem">{{ x.item2 }}</li>
+                                  <li class="serItem">{{ x.item3 }}</li>
+                                  <li class="serItem">{{ x.item4 }}</li>
+                                  <li class="serItem" style="margin-bottom: 10px;">{{ x.item5 }}</li>
+                                  <li class="serItem" style="border-top: 1px solid #ccc; padding-bottom: 10px;">&nbsp;</li>
+                              </ul>
+                            <!--   <div class="serBtn">
+                                  <a href="" class="btn btn-enquire">Discover</a>
+                              </div> -->
+                      </div>
+  <!-- End of AngularJS Store -->
+                  </div>
+                  <div class="button-centering">
+                      <a href="services.html" class="btn btn-lg btn-primary">Learn More!</a>
+                  </div>
+          </div>
       </div>
-  </div>
+  <!-- END OF SERVICES -->
   <!-- Scripts at the end to load the page faster -->
-  <script src="assets/js/bootstrap.js"></script> <!-- Bootstrap -->
   <script src="assets/js/jquery.min.js"></script> <!-- jQuery -->
+  <script src="assets/js/bootstrap.js"></script> <!-- Bootstrap -->
   <script src="https://use.fontawesome.com/607f7c0e54.js"></script> <!-- Font Awesome -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script> <!-- AngularJS -->
   <script src="assets/js/functions.js"></script> <!-- My JS -->

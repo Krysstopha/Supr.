@@ -1,6 +1,6 @@
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope) {
-  $scope.intro = 'Price guide for my personalised Web Services.';
+  $scope.intro = 'Price Guide For My Personalised Web Services.';
   $scope.product = [
     {
       name: 'Standard Package',
@@ -34,6 +34,18 @@ app.controller('myCtrl', function($scope) {
       item3: 'CMS',
       item4: 'Help with deployment and domain',
       item5: 'Specifics you wish to be implemented',
+    }
+  ];
+  $scope.portfolio = [
+    {
+      title: 'Personal Website',
+      image: 'imgs/kryssdesign.JPG',
+      para: '',
+    },
+    {
+      title: 'Cooking Creations',
+      image: 'imgs/kryssdesign.jpg',
+      para: '',
     }
   ];
 });

@@ -37,7 +37,7 @@ i {
     transform: translate(0px, -10px);
 }
 .intro-statement {
-    font-size: 40px;
+    font-size: 80px;
     border-bottom: 1px solid #ccc;
     padding-bottom: 50px;
     padding-top: 50px;
@@ -312,12 +312,17 @@ i {
    width: 100%;
 }
 
+.portContainer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+}
+
 .imageSrc {
     max-width: 500px;
     height: 500px;
-    padding: 20px;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 .display {
@@ -327,19 +332,16 @@ i {
 .portP {
     border: 2px solid #769FFF;
     border-radius: 5px;
-    margin-left: 2px;
-    margin-right: 2px;
+    margin-left: -400px;
     display: none;
+    opacity: 0;
 }
 
-.portContainer {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 600px;
+.portTitle {
+  display: none;
 }
+
+/* Media Queries */
 @media screen and (max-width: 1200px) {
     .portContainer {
         width: 800px;
@@ -397,7 +399,6 @@ i {
     justify-content: space-between;
     padding-top: 50px;
     padding-bottom: 50px;
-    background-color: pink;
     margin-left: 260px;
 }
 
@@ -488,7 +489,7 @@ i {
         width: 150px;
         height: 250px;
         margin: 0 auto;
-        padding: 20px; 
+        padding: 20px;
     }
 }
 /* END OF SERVICE CODE */
