@@ -1,7 +1,7 @@
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope) {
   $scope.intro = 'Price Guide For My Personalised Web Services.';
-  $scope.product = [
+  $scope.product = [ 
     {
       name: 'Standard Package',
       price: 329.99,
