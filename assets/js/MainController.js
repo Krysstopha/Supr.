@@ -1,7 +1,10 @@
+
+/* START OF MY APP MODULE */
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope) {
   $scope.intro = 'Price Guide For My Personalised Web Services.';
-  $scope.product = [ 
+  /* SERVICE ANGULAR DATA */
+  $scope.product = [
     {
       name: 'Standard Package',
       price: 329.99,
@@ -36,11 +39,12 @@ app.controller('myCtrl', function($scope) {
       item5: 'Specifics you wish to be implemented',
     }
   ];
+  /* PORTFOLIO ANGULAR DATA */
   $scope.portfolio = [
     {
       title: 'Personal Website',
       image: 'imgs/kryssdesign.JPG',
-      para: '',
+      para: 'Designed to advertise myself, Khryss\' Designs is a personal website to display my portfolio. It has been entirely built by me, as a meetng point for customers to understand what it is that I can achieve.',
     },
     {
       title: 'Cooking Creations',

@@ -329,12 +329,9 @@ i {
     display: block;
 }
 
-.portP {
+.portPara {
     border: 2px solid #769FFF;
     border-radius: 5px;
-    margin-left: -400px;
-    display: none;
-    opacity: 0;
 }
 
 .portTitle {
