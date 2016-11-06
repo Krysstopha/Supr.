@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<!-- HEAD -->
   <head>
     <!-- Meta Tags -->
     <meta content="text/html; charset=utf-8" http-equiv="Content-type">
@@ -14,6 +15,9 @@
     <!-- Favicon Element -->
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
   </head>
+<!-- END OF HEAD -->
+
+<!-- BODY -->
 <body ng-app="myApp" ng-controller="myCtrl">
 <!-- LANDING PAGE -->
     <section id="cover">
@@ -22,7 +26,7 @@
                 <div class="col-sm-10 col-sm-offset-1">
                     <h1 class="cover-title zoomIn animated">Khryss' Designs</h1>
                     <p class="kicker zoomIn animated">Designer <span class="slash">//</span>
-                      Developer <span class="slash">//</span> Presentor</p>
+                      Developer <span class="slash">//</span> Coder</p>
                     <button href="#About" role="button" class="btn btn-default btn-sm">
                     <span class="glyphicon glyphicon-chevron-down" style="color: #769FFF; font-size: 25px; padding: 5px 7px"></span>
                     </button>
@@ -55,7 +59,7 @@
 <!-- START OF ABOUT ME STATEMENT -->
     <div class="container">
         <div class="col-md-12">
-            <p class="intro-statement">Complex &nbsp; Simplicity &nbsp; Is&nbsp; Key.</p>
+            <p class="intro-statement">Complex&nbsp; Simplicity &nbsp; Is&nbsp; Key.</p>
         </div>
     </div>
     <section id="About">
@@ -103,7 +107,7 @@
                         </div>
                     </div>
                     <div class="skill-unit">
-                        <div class="skill-label">Organization</div>
+                        <div class="skill-label">Organisation</div>
                         <div class="skill-icon rating-8">
                             <span></span><span></span><span></span><span></span><span></span>
                             <span></span><span></span><span></span><span></span><span></span>
@@ -123,6 +127,7 @@
     </section>
 <!-- END OF ABOUT ME SECTION -->
 
+</div>
 <!-- START OF PORTFOLIO -->
     <section id="Portfolio">
         <div id="portfolio-caption">
@@ -141,11 +146,11 @@
                 <div class="portContainer" ng-repeat="x in portfolio">
                     <h1 class="portTitle">{{ x.title }}</h1>
                     <img ng-src="{{ x.image }}" class="imageSrc img-responsive" id="test">
-                    <p class="portPara">{{ x.para}}</p>
+                    <!-- <p class="portPara">{{ x.para}}</p> -->
                 </div>
-                <div class="button-centering">
-                    <a href="portfolio.html" class="btn btn-lg btn-primary">Learn More!</a>
-                </div>
+            <div class="button-centering">
+                <a href="portfolio.html" class="btn btn-lg btn-primary">Learn More!</a>
+            </div>
         </div>
     </div>
 <!-- END OF PORTFOLIO -->
@@ -162,7 +167,9 @@
             </div>
         </div>
     </section>
+
 <!-- AngularJS Store -->
+
     <div class="service-section">
         <div class="container-fluid">
             <p class="intro-statement">{{ intro }}</p>
@@ -237,4 +244,5 @@
 <script src="assets/js/MainController.js"></script> <!-- Main Controller -->
 
 </body>
+<!-- END OF BODY -->
 </html>
