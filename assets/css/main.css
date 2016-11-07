@@ -220,27 +220,21 @@ i {
 
 /* SECONDARY ABOUT SECTION */
 
-.langSkill {
-		max-width: 900px;
-		height: 900px;
-		overflow: auto;
-}
-
 .langHolder {
-		max-width: 300px;
-		height: 100px;
-}
-
-.langTitle {
 		font-size: 50px;
 }
 
+.langTitle {
+		visibility: hidden;
+}
+
 .langBar {
-		width: 100px;
+		width: 1000px;
 		height: 15px;
 		background-color: #fefefe;
 		border-radius: 2px;
-		border: 2px solid red;
+		border: 2px solid #768fff;
+		font-size: 30px;
 }
 
 /* END OF ABOUT SECTION CODE! */

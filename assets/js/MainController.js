@@ -1,4 +1,3 @@
-
 /* START OF MY APP MODULE */
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope) {
