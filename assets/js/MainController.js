@@ -4,16 +4,16 @@ app.controller('myCtrl', function($scope) {
   $scope.intro = 'Price Guide For My Personalised Web Services.';
   /* SERVICE ANGULAR DATA */
   $scope.product = [
+    // {
+    //   name: 'Standard Package',
+    //   price: 329.99,
+    //   item1: 'Full functionality website',
+    //   item2: 'Responsive Design',
+    //   item3: 'CMS',
+    // },
     {
-      name: 'Standard Package',
-      price: 329.99,
-      item1: 'Full functionality website',
-      item2: 'Responsive Design',
-      item3: 'CMS',
-    },
-    {
-      name: 'Blogger Package',
-      price: 489.99,
+      name: 'Basic Package',
+      price: 399.99,
       item1: 'Full functionality website',
       item2: 'Responsive Design',
       item3: 'CMS',

@@ -121,9 +121,25 @@
                         </div>
                     </div>
               </div>
-              <div class="button-centering">
-                  <a href="about.html" class="btn btn-lg btn-primary">Learn More!</a>
-              </div>
+							<div class="container" style="display: flex; justify-content: center;">
+									<div class="langCont">
+											<div class="langHolder">
+													<h1 class="langTitle">HTML5</h1>
+													<div class="langBar langLength90"><span class="langPer">90%</span></div>
+											</div>
+											<div class="langHolder">
+													<h1 class="langTitle">CSS3</h1>
+													<div class="langBar langLength80"><span class="langPer">80%</span></div>
+											</div>
+											<div class="langHolder">
+													<h1 class="langTitle">JS</h1>
+													<div class="langBar langLength40"><span class="langPer">40%</span></div>
+											</div>
+									</div>
+							</div>
+							<div class="button-centering" style="margin-top: 10px">
+									<a href="about.html" class="btn btn-lg btn-primary">Learn More!</a>
+							</div>
     </section>
 <!-- END OF ABOUT ME SECTION -->
 
@@ -171,9 +187,9 @@
 <!-- AngularJS Store -->
 
     <div class="service-section">
-        <div class="container-fluid">
+        <div class="container">
             <p class="intro-statement">{{ intro }}</p>
-                <div class="abilContainer" >
+                <div class="abilContainer">
                     <div class="ability" ng-repeat="x in product">
                         <span class="serSpan">{{ x.price | currency}}<span class="serNum">From</span></span>
                         <h1 class="serStatement"><strong>{{ x.name }}</strong></h1>

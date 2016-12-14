@@ -17,10 +17,11 @@
 //   });
 // });
 
-$(document).ready(function(){
-	$(".langBar").mouseover(function(){
-		$(".langTitle").attr("style", "visibility: visible");
-		setTimeout(1000);
-		$(".langTitle").attr("style", "visibility: hidden");
-	});
-});
+// $(document).ready(function(){
+// 	$(".langBar").mouseover(function(){
+// 		$(".langTitle").attr("style", "visibility: visible");
+// 	});
+// 	$(".langBar").mouseout(function(){
+// 		$(".langTitle").attr("style", "visibility: hidden");
+// 	});
+// });

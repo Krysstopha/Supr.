@@ -14,7 +14,7 @@
 html,
 body {
     height: 100%;
-    background-color: #f5f6f7;
+    background-color: #fffffe;
 }
 i {
     padding-left: 20px;
@@ -50,7 +50,7 @@ i {
 
 /* Cover Landing */
 #cover {
-    background: #222 url('https://images4.alphacoders.com/568/568014.jpg') center center no-repeat;
+    background: #222 url("../../imgs/intro.jpg") center center no-repeat;
     background-size: cover;
     color: white;
     height: 100%;
@@ -71,6 +71,7 @@ i {
     border-radius: 10px;
     padding-bottom: 5px;
     color: #FFFFF0;
+		text-shadow: 2px;
 }
 
 /* Kicker on Welcome Page */
@@ -111,6 +112,7 @@ i {
 /* Nav Bar Color */
 .navbar-inverse {
     background-color: rgba(0,0,0,0.6);
+		box-shadow: 10px rgba(0,0,0,0.9);
 }
 
 /* NavBar Links */
@@ -220,21 +222,42 @@ i {
 
 /* SECONDARY ABOUT SECTION */
 
+.langCout {
+		display: flex;
+		justify-content: center;
+}
+
 .langHolder {
-		font-size: 50px;
+		padding: 10px;
 }
 
 .langTitle {
-		visibility: hidden;
+		/*visibility: hidden;*/
+		text-align: center;
+}
+
+.langPer {
+		float: right;
+		margin-top: 30px;
 }
 
 .langBar {
-		width: 1000px;
 		height: 15px;
 		background-color: #fefefe;
 		border-radius: 2px;
 		border: 2px solid #768fff;
 		font-size: 30px;
+		margin-bottom: 40px;
+}
+
+.langLength90 {
+		width: 450px;
+}
+.langLength80 {
+		width: 400px;
+}
+.langLength40 {
+		width: 200px;
 }
 
 /* END OF ABOUT SECTION CODE! */
@@ -315,10 +338,9 @@ i {
 
 /* Main Portfolio "Section" */
 #Portfolio {
-    background-image: url('http://www.inertdesign.com/wp-content/uploads/2016/03/apple-iphone-desk-office-1920x500.jpg');
+    background: #222 url('http://www.inertdesign.com/wp-content/uploads/2016/03/apple-iphone-desk-office-1920x500.jpg') center center no-repeat;
     height: 45%;
-    background-repeat: no-repeat;
-    background-size: cover;
+ 		background-size: cover;
     color: white;
     text-align: center;
     display: flex;
@@ -392,9 +414,8 @@ i {
 /* START OF SERVICE CODE */
 
 #Service {
-    background-image: url('http://melbourneitsolutions.com.au/wp-content/uploads/2014/03/photo-1421757295538-9c80b0.jpg');
+    background: #222 url('http://melbourneitsolutions.com.au/wp-content/uploads/2014/03/photo-1421757295538-9c80b0.jpg') center center no-repeat;
     height: 45%;
-    background-repeat: no-repeat;
     background-size: cover;
     color: white;
     text-align: center;
@@ -421,7 +442,7 @@ i {
 /* Service Card */
 .ability {
     width: 300px;
-    height: 700px;
+    height: 500px;
     border: 1px solid #ccc;
     background-color: transparent;
     margin: 0 auto;
