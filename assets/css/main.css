@@ -220,51 +220,10 @@ i {
     font-weight: 400;
 }
 
-/* SECONDARY ABOUT SECTION */
 
-.langCout {
-		display: flex;
-		justify-content: center;
-}
+/* Start of the Skills - Circles */
 
-.langHolder {
-		padding: 10px;
-}
-
-.langTitle {
-		/*visibility: hidden;*/
-		text-align: center;
-}
-
-.langPer {
-		float: right;
-		margin-top: 30px;
-}
-
-.langBar {
-		height: 15px;
-		background-color: #fefefe;
-		border-radius: 2px;
-		border: 2px solid #768fff;
-		font-size: 30px;
-		margin-bottom: 40px;
-}
-
-.langLength90 {
-		width: 450px;
-}
-.langLength80 {
-		width: 400px;
-}
-.langLength40 {
-		width: 200px;
-}
-
-/* END OF ABOUT SECTION CODE! */
-/* ----------------------------------------------------------------------------------------------------------------------- */
-/* START OF SKILLS SECTION CODE */
-
-/* Main container for the Skills */
+/* Main container for the Skills*/
 .skill-lockup {
   text-align: center;
     max-width: 500px;
@@ -331,9 +290,54 @@ i {
     }
 
 }
-/* End Of The Circles */
+/* End Of The Skills - Circles */
 
-/* END OF SKILLS SECTION CODE */
+/* Start of :anguage Section */
+
+.langCout {
+		display: flex;
+		justify-content: center;
+}
+
+.langHolder {
+		padding: 10px;
+}
+
+.langTitle {
+		text-align: center;
+}
+
+.langPer {
+		float: right;
+		margin-top: 30px;
+}
+
+.langBar {
+		height: 15px;
+		background-color: #fefefe;
+		border-radius: 2px;
+		border: 2px solid #768fff;
+		font-size: 30px;
+		margin-bottom: 40px;
+}
+
+.langLength90 {
+		width: 450px;
+}
+.langLength80 {
+		width: 400px;
+}
+.langLength40 {
+		width: 200px;
+}
+
+/* START OF SECONDARY ABOUT PAGE */
+
+.bioPara {
+    font-size: 20px;
+    margin-top: 50px;
+}
+/* END OF ABOUT SECTION CODE! */
 /* ----------------------------------------------------------------------------------------------------------------------- */
 /* START OF PORTFOLIO SECTION CODE */
 

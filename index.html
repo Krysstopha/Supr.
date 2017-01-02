@@ -14,7 +14,7 @@
     <link href="assets/css/animate.css" rel="stylesheet">
     <!-- Favicon Element -->
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
-		<script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script> <!-- Scrollreveal -->
+	<script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script> <!-- Scrollreveal -->
   </head>
 <!-- END OF HEAD -->
 
@@ -28,7 +28,7 @@
                     <h1 class="cover-title zoomIn animated">Khryss' Designs</h1>
                     <p class="kicker zoomIn animated">Designer <span class="slash">//</span>
                       Developer <span class="slash">//</span> Coder</p>
-                    <button href="#About" role="button" class="btn btn-default btn-sm">
+                    <button href="#About" role="button" class="landScroll btn btn-default btn-sm">
                     <span class="glyphicon glyphicon-chevron-down" style="color: #769FFF; font-size: 25px; padding: 5px 7px"></span>
                     </button>
                 </div>
@@ -122,25 +122,25 @@
                         </div>
                     </div>
               </div>
-							<div class="container" style="display: flex; justify-content: center;">
-									<div class="langCont">
-											<div class="langHolder">
-													<h1 class="langTitle">HTML5</h1>
-													<div class="langBar langLength90"><span class="langPer">90%</span></div>
-											</div>
-											<div class="langHolder">
-													<h1 class="langTitle">CSS3</h1>
-													<div class="langBar langLength80"><span class="langPer">80%</span></div>
-											</div>
-											<div class="langHolder">
-													<h1 class="langTitle">JS</h1>
-													<div class="langBar langLength40"><span class="langPer">40%</span></div>
-											</div>
-									</div>
-							</div>
-							<div class="button-centering" style="margin-top: 10px">
-									<a href="about.html" class="btn btn-lg btn-primary">Learn More!</a>
-							</div>
+    			<div class="container" style="display: flex; justify-content: center;">
+    					<div class="langCont">
+    							<div class="langHolder">
+    									<h1 class="langTitle">HTML5</h1>
+    									<div class="langBar langLength90"><span class="langPer">90%</span></div>
+    							</div>
+    							<div class="langHolder">
+    									<h1 class="langTitle">CSS3</h1>
+    									<div class="langBar langLength80"><span class="langPer">80%</span></div>
+    							</div>
+    							<div class="langHolder">
+    									<h1 class="langTitle">JS</h1>
+    									<div class="langBar langLength40"><span class="langPer">40%</span></div>
+    							</div>
+    					</div>
+    			</div>
+    			<div class="button-centering" style="margin-top: 10px">
+    					<a href="about.html" class="btn btn-lg btn-primary">Learn More!</a>
+    			</div>
     </section>
 <!-- END OF ABOUT ME SECTION -->
 
@@ -179,21 +179,18 @@
                 <div class="col-sm-10 col-sm-offset-1">
                     <h1 class="cover-title zoomIn animated">Services</h1>
                     <p class="kicker zoomIn animated">Built To Perfection.</p>
-                    </a>
                 </div>
             </div>
         </div>
     </section>
-
 <!-- AngularJS Store -->
-
     <div class="service-section">
         <div class="container">
             <p class="intro-statement">{{ intro }}</p>
                 <div class="abilContainer">
                     <div class="ability" ng-repeat="x in product">
                         <span class="serSpan">{{ x.price | currency}}<span class="serNum">From</span></span>
-                        <h1 class="serStatement"><strong>{{ x.name }}</strong></h1>
+                        <h1 class="serStatement"><strong><a href="services.html">{{ x.name }}</a></strong></h1>
                             <ul class="serTable">
                                 <li class="serItem">{{ x.item1 }}</li>
                                 <li class="serItem">{{ x.item2 }}</li>
@@ -202,12 +199,12 @@
                                 <li class="serItem" style="margin-bottom: 10px;">{{ x.item5 }}</li>
                                 <li class="serItem" style="border-top: 1px solid #ccc; padding-bottom: 10px;">&nbsp;</li>
                             </ul>
-                          <!--   <div class="serBtn">
-                                <a href="" class="btn btn-enquire">Discover</a>
+                            <!-- <div class="serBtn">
+                                <a href="services.html" class="btn btn-enquire">Discover</a>
                             </div> -->
                     </div>
-<!-- End of AngularJS Store -->
                 </div>
+<!-- End of AngularJS Store -->
                 <div class="button-centering">
                     <a href="services.html" class="btn btn-lg btn-primary">Learn More!</a>
                 </div>

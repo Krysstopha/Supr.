@@ -44,3 +44,10 @@ sr.reveal('.langBar', { duration: 1500 }); // Progress Bar
 sr.reveal('.langPer', { duration: 2000 }); // Progress Percentage
 sr.reveal('.abilContainer', { duration: 1500 });
 sr.reveal('.button-centering', { rotate: { x: 0, y: -100, z: 0 } }, { duration: 30000 }); // More Button
+
+// Landing Page Button Scroll
+$(".landScroll").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#About").offset().top},
+        '10000');
+});

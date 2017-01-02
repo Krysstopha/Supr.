@@ -14,7 +14,7 @@
     <link href="assets/css/animate.css" rel="stylesheet">
     <!-- Favicon Element -->
     <link rel="shortcut icon" href="imgs/favicon.ico" type="image/x-icon">
-      <script src="assets/js/angular.min.js"></script>
+      <script src="https://unpkg.com/scrollreveal@3.3.2/dist/scrollreveal.min.js"></script> <!-- Scrollreveal -->
   </head>
 <body>
   <!-- NAV BAR -->
@@ -95,24 +95,38 @@
                       </div>
                   </div>
             </div>
-						<div class="container">
-	            	<!-- <div class="langHolder"> -->
-									<!-- <div class="langHolder"> -->
-										<h1 class="langTitle">HTML5</h1>
-										<div class="langBar">90%</div>
-									<!-- </div> -->
-	            <!-- </div> -->
-						</div>
-            <div class="button-centering">
-                <a href="about.html" class="btn btn-lg btn-primary">Learn More!</a>
+            <div class="container" style="display: flex; justify-content: center;">
+                    <div class="langCont">
+                            <div class="langHolder">
+                                    <h1 class="langTitle">HTML5</h1>
+                                    <div class="langBar langLength90"><span class="langPer">90%</span></div>
+                            </div>
+                            <div class="langHolder">
+                                    <h1 class="langTitle">CSS3</h1>
+                                    <div class="langBar langLength80"><span class="langPer">80%</span></div>
+                            </div>
+                            <div class="langHolder">
+                                    <h1 class="langTitle">JS</h1>
+                                    <div class="langBar langLength40"><span class="langPer">40%</span></div>
+                            </div>
+                    </div>
+            </div>
+            <div id="Bio">
+                <div class="container">
+                    <div>
+                        <h1 class="intro-statement">More In Depth</h1>
+                        <p class="bioPara">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    </div>
+                </div>
             </div>
   </section>
   <!-- Scripts at the end to load the page faster -->
-	<script src="assets/js/jquery.min.js"></script> <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> <!-- jQuery -->
   <script src="assets/js/bootstrap.js"></script> <!-- Bootstrap -->
   <script src="https://use.fontawesome.com/607f7c0e54.js"></script> <!-- Font Awesome -->
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script> <!-- AngularJS -->
   <script src="assets/js/functions.js"></script> <!-- My JS -->
+  <script src="assets/js/MainController.js"></script> <!-- Main Controller -->
   <!-- <script src="assets/js/MainController.js"></script>  Main Controller -->
 </body>
 </html>
