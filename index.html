@@ -6,7 +6,7 @@
     <meta content="text/html; charset=utf-8" http-equiv="Content-type">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Title -->
-    <title>Khryss' Designs</title>
+    <title>Supr.</title>
     <!-- Bootstrap First! -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <!-- Then main stylesheets -->
@@ -25,9 +25,9 @@
         <div id="cover-caption">
             <div class="container">
                 <div class="col-sm-10 col-sm-offset-1">
-                    <h1 class="cover-title zoomIn animated">Khryss' Designs</h1>
-                    <p class="kicker zoomIn animated">Designer <span class="slash">//</span>
-                      Developer <span class="slash">//</span> Coder</p>
+                    <h1 class="coverTitle zoomIn animated">Supr.</h1>
+                    <p class="kicker zoomIn animated">Design <span class="slash">//</span>
+                      Develop <span class="slash">//</span> Deploy</p>
                     <button href="#About" role="button" class="landScroll btn btn-default btn-sm">
                     <span class="glyphicon glyphicon-chevron-down" style="color: #769FFF; font-size: 25px; padding: 5px 7px"></span>
                     </button>
@@ -48,10 +48,10 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="aboutme.html" class="navType zoomIn animated">About Me</a></li>
-                <li><a href="portfolio.html" class="navType zoomIn animated">Portfolio</a></li>
-                <li><a href="services.html" class="navType zoomIn animated">Services</a></li>
-                <li><a href="contact.html" class="navType zoomIn animated">Contact Me</a></li>
+                <li><a href="#About" class="navType zoomIn animated aboutScroll">About Me</a></li>
+                <li><a href="#Portfolio" class="navType zoomIn animated portScroll">Portfolio</a></li>
+                <li><a href="#Service" class="navType zoomIn animated serviceScroll">Services</a></li>
+                <li><a href="#Contact" class="navType zoomIn animated contactScroll">Contact Me</a></li>
             </ul>
         </div>
     </div>
@@ -60,7 +60,7 @@
 <!-- START OF ABOUT ME STATEMENT -->
     <div class="container">
         <div class="col-md-12">
-            <p class="intro-statement">Complex&nbsp; Simplicity &nbsp; Is&nbsp; Key.</p>
+            <p class="introStatement">Complexity&nbsp; made &nbsp; Simple.</p>
         </div>
     </div>
     <section id="About">
@@ -126,21 +126,21 @@
     					<div class="langCont">
     							<div class="langHolder">
     									<h1 class="langTitle">HTML5</h1>
-    									<div class="langBar langLength90"><span class="langPer">90%</span></div>
+    									<div class="langBar90 langLength"><span class="langPer">90%</span></div>
     							</div>
     							<div class="langHolder">
     									<h1 class="langTitle">CSS3</h1>
-    									<div class="langBar langLength80"><span class="langPer">80%</span></div>
+    									<div class="langBar80 langLength"><span class="langPer">80%</span></div>
     							</div>
     							<div class="langHolder">
     									<h1 class="langTitle">JS</h1>
-    									<div class="langBar langLength40"><span class="langPer">40%</span></div>
+    									<div class="langBar30 langLength"><span class="langPer">30%</span></div>
     							</div>
     					</div>
     			</div>
-    			<div class="button-centering" style="margin-top: 10px">
+    		<!--	<div class="button-centering" style="margin-top: 10px">
     					<a href="about.html" class="btn btn-lg btn-primary">Learn More!</a>
-    			</div>
+    			</div> -->
     </section>
 <!-- END OF ABOUT ME SECTION -->
 
@@ -150,7 +150,7 @@
         <div id="portfolio-caption">
             <div class="container">
                 <div class="col-sm-10 col-sm-offset-1">
-                    <h1 class="cover-title zoomIn animated">Portfolio</h1>
+                    <h1 class="coverTitle zoomIn animated">Portfolio</h1>
                     <p class="kicker zoomIn animated">Masterpieces Produced.</p>
                     </a>
                 </div>
@@ -159,15 +159,15 @@
     </section>
     <div class="portfolio-section">
         <div class="container">
-            <p class="intro-statement">A Showcase Of My Work.</p>
+            <p class="introStatement">A showcase of my work.</p>
                 <div class="portContainer" ng-repeat="x in portfolio">
                     <h1 class="portTitle">{{ x.title }}</h1>
                     <img ng-src="{{ x.image }}" class="imageSrc img-responsive" id="test">
                     <!-- <p class="portPara">{{ x.para}}</p> -->
                 </div>
-            <div class="button-centering">
-                <a href="portfolio.html" class="btn btn-lg btn-primary">Learn More!</a>
-            </div>
+                <!--	<div class="button-centering" style="margin-top: 10px">
+        					<a href="about.html" class="btn btn-lg btn-primary">Learn More!</a>
+        			</div> -->
         </div>
     </div>
 <!-- END OF PORTFOLIO -->
@@ -177,7 +177,7 @@
         <div id="service-caption">
             <div class="container">
                 <div class="col-sm-10 col-sm-offset-1">
-                    <h1 class="cover-title zoomIn animated">Services</h1>
+                    <h1 class="coverTitle zoomIn animated">Services</h1>
                     <p class="kicker zoomIn animated">Built To Perfection.</p>
                 </div>
             </div>
@@ -186,28 +186,28 @@
 <!-- AngularJS Store -->
     <div class="service-section">
         <div class="container">
-            <!-- <p class="intro-statement">{{ intro }}</p>
+            <p class="introStatement">{{ intro }}</p>
                 <div class="abilContainer">
                     <div class="ability" ng-repeat="x in product">
-                        <span class="serSpan">{{ x.price | currency}}<span class="serNum">From</span></span>
-                        <h1 class="serStatement"><strong><a href="services.html">{{ x.name }}</a></strong></h1>
-                            <ul class="serTable">
+                        <!-- <span class="serSpan">{{ x.price | currency}}<span class="serNum">From</span></span> -->
+                        <h1 class="serStatement">{{ x.name }}</h1>
+                            <!-- <ul class="serTable">
                                 <li class="serItem">{{ x.item1 }}</li>
                                 <li class="serItem">{{ x.item2 }}</li>
                                 <li class="serItem">{{ x.item3 }}</li>
                                 <li class="serItem">{{ x.item4 }}</li>
-                                <li class="serItem" style="margin-bottom: 10px;">{{ x.item5 }}</li>
-                                <li class="serItem" style="border-top: 1px solid #ccc; padding-bottom: 10px;">&nbsp;</li>
-                            </ul>
+                                <li class="serItem" style="border-top: 1px solid #ccc">&nbsp;</li>
+                            </ul> -->
+                                <li class="serItem" style="margin-bottom: 10px;">{{ x.desc }}</li>
                             <div class="serBtn">
-                                <a href="services.html" class="btn btn-enquire">Discover</a>
+                                <!-- <a href="#Contact" class="serviceSpecScroll btn btn-enquire">Discover</a>
                             </div> -->
                     </div>
                 </div>
 <!-- End of AngularJS Store -->
-                <div class="button-centering">
-                    <a href="services.html" class="btn btn-lg btn-primary">Learn More!</a>
-                </div>
+<!--	<div class="button-centering" style="margin-top: 10px">
+            <a href="about.html" class="btn btn-lg btn-primary">Learn More!</a>
+    </div> -->
         </div>
     </div>
 <!-- END OF SERVICES -->
@@ -217,19 +217,19 @@
         <div id="contact-caption">
             <div class="container">
                 <div class="col-sm-10 col-sm-offset-1">
-                    <h1 class="cover-title zoomIn animated">Contact Me</h1>
+                    <h1 class="coverTitle zoomIn animated">Contact Me</h1>
                     <p class="kicker zoomIn animated">Communication At Its Finest.</p>
                     </a>
                 </div>
             </div>
             <div class="contactNote">
-              <p>Email is a fast and simple way to contact me, in any amount of detail. <br>
-                 I strive to reply within a reasonable time frame.<br>
+              <p>Email is a fast and simple way to contact me in any amount of detail. <br>
+                 I strive to reply within ASAP.<br>
                  My email: christopherdedes2906@gmail.com
             </div>
-            <div class="button-centering">
-                <a href="contact.html" class="btn btn-lg btn-primary">Learn More!</a>
-            </div>
+            <!--	<div class="button-centering" style="margin-top: 10px">
+    					<a href="about.html" class="btn btn-lg btn-primary">Learn More!</a>
+    			</div> -->
         </div>
     </section>
 <!-- END OF CONTACT US -->
@@ -241,7 +241,7 @@
                   <p class="footerNote">Kryss' Design © 2016</p>
               </div>
               <div class="navbar-text pull-right">
-                  <a href="#" target="_blank"><i class="fa fa-facebook-square fa-2x faFooter" style="color: #3B5998"></i></a>
+                  <a href="https://www.facebook.com/Khrysstopha" target="_blank"><i class="fa fa-facebook-square fa-2x faFooter" style="color: #3B5998"></i></a>
                   <a href="https://twitter.com/Krysstopha" target="_blank"><i class="fa fa-twitter-square fa-2x faFooter" style="color: #55ACEE"></i></a>
                   <a href="https://plus.google.com/u/1/100123363922120158978" target="_blank"><i class="fa fa-google-plus fa-2x faFooter" style="color: #dd4b39"></i></a>
               </div>

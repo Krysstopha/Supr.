@@ -1,7 +1,7 @@
 /* START OF MY APP MODULE */
 var app = angular.module('myApp', []);
 app.controller('myCtrl', function($scope) {
-  $scope.intro = 'Price Guide For My Personalised Web Services.';
+  $scope.intro = 'A plan right for you.';
   /* SERVICE ANGULAR DATA */
   $scope.product = [
     // {
@@ -12,30 +12,33 @@ app.controller('myCtrl', function($scope) {
     //   item3: 'CMS',
     // },
     {
-      name: 'Basic Package',
-      price: 399.99,
-      item1: 'Full functionality website',
-      item2: 'Responsive Design',
-      item3: 'CMS',
-      item4: 'Help with deployment and domain',
+      name: 'A little something',
+     // price: 399.99,
+    //   item1: 'Functionality',
+    //   item2: 'Responsive Design',
+    //   item3: 'CMS',
+    //   item4: 'Help with deployment and domain',
+      desc: 'A package for anyone with a bright idea, created for any occassion or startup.'
     },
     {
-      name: 'Business Package',
-      price: 649.99,
-      item1: 'Full functionality website',
-      item2: 'Responsive Design',
-      item3: 'CMS',
-      item4: 'Help with deployment and domain',
-      item5: 'Online Shopping Integration',
+      name: 'Personal',
+    // price: 649.99,
+    //   item1: 'Extended Functionality',
+    //   item2: 'Responsive Design',
+    //   item3: 'CMS',
+    //   item4: 'Help with deployment and domain',
+    //   item5: 'Online Shopping Integration',
+    desc: 'Perfect for any blogger type role, a personalised website centred around agile functionality, and tailored operation.'
     },
     {
-      name: 'Special Package',
-      price: 749.99,
-      item1: 'Full functionality',
-      item2: 'Responsive Desgin',
-      item3: 'CMS',
-      item4: 'Help with deployment and domain',
-      item5: 'Specifics you wish to be implemented',
+      name: 'Business oriented',
+    //  price: 749.99,
+    //   item1: 'Specific Functionality',
+    //   item2: 'Responsive Desgin',
+    //   item3: 'CMS',
+    //   item4: 'Help with deployment and domain',
+    //   item5: 'Specifics you wish to be implemented',
+    desc: 'A package that goes a little deeper, includes greater functionality with integrated shopping support.'
     }
   ];
   /* PORTFOLIO ANGULAR DATA */

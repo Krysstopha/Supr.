@@ -49,5 +49,30 @@ sr.reveal('.button-centering', { rotate: { x: 0, y: -100, z: 0 } }, { duration: 
 $(".landScroll").click(function() {
     $('html,body').animate({
         scrollTop: $("#About").offset().top},
-        '10000');
+        'slow');
+});
+$(".aboutScroll").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#About").offset().top},
+        'slow');
+});
+$(".portScroll").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#Portfolio").offset().top},
+        'slow');
+});
+$(".serviceScroll").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#Service").offset().top},
+        'slow');
+});
+$(".contactScroll").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#Contact").offset().top},
+        'slow');
+});
+$(".serviceSpecScroll").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#Contact").offset().top},
+        'slow');
 });

@@ -3,9 +3,10 @@
 
 /* Fonts */
 @import url(https://fonts.googleapis.com/css?family=Lato);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
 /* Global Attributes */
 * {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Roboto', sans-serif;
     color: #3A3D41;
     box-sizing: border-box;
 }
@@ -20,13 +21,14 @@ i {
     padding-left: 20px;
     padding-top: 20px;
 }
-.btn-primary {
+/* .btn-primary {
     background-color: #768FFF;
-    box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.4);
     cursor: pointer;
     transition: all ease-in-out 200ms;
     text-transform: uppercase;
-    border-radius: 5px;
+    border-radius: 3px;
+    border-color: transparent;
     padding: 20px 30px;
 }
 .button-centering {
@@ -34,10 +36,11 @@ i {
 }
 .btn-primary:hover {
     background-color: #768FFF;
-    box-shadow: 0px 37px 20px -20px rgba(0,0,0,0.2);
-    transform: translate(0px, -10px);
-}
-.intro-statement {
+    box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.4);
+    border-color: transparent;
+    /* transform: translate(0px, -10px);
+} */
+.introStatement {
     font-size: 50px;
     border-bottom: 1px solid #ccc;
     padding-bottom: 50px;
@@ -64,13 +67,13 @@ i {
 }
 
 /* Title */
-.cover-title {
-    font-size: 100px;
+.coverTitle {
+    font-size: 150px;
     /*border-top: 6px solid #769FFF;
     border-bottom: 6px solid #769FFF;*/
     border-radius: 10px;
     padding-bottom: 5px;
-    color: #FFFFF0;
+    color: #fefefe;
 		text-shadow: 2px;
 }
 
@@ -172,7 +175,7 @@ i {
 .icon5 {order: 5;}
 
 .icon3 {
-    border: 2px solid #ccc;
+    border-radius: 10px solid #fff;
     box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
 }
 /* About section small text */
@@ -312,38 +315,50 @@ i {
 		margin-top: 30px;
 }
 
-.langBar {
+.langBar90 {
 		height: 15px;
-		background-color: #fefefe;
-		border-radius: 2px;
+		background-color: #768fff;
+        background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 1) 90%, transparent 10%, transparent);
+        background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 1) 90%, transparent 10%, transparent);
+        background-image: linear-gradient(-45deg, rgba(255, 255, 255, 1) 10%, transparent 10%, transparent);
 		border: 2px solid #768fff;
 		font-size: 30px;
 		margin-bottom: 40px;
 }
 
-.langLength90 {
-		width: 450px;
-}
-.langLength80 {
-		width: 400px;
-}
-.langLength40 {
-		width: 200px;
+.langBar80 {
+		height: 15px;
+		background-color: #768fff;
+        background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 1) 90%, transparent 10%, transparent);
+        background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 1) 90%, transparent 10%, transparent);
+        background-image: linear-gradient(-45deg, rgba(255, 255, 255, 1) 20%, transparent 10%, transparent);
+		border: 2px solid #768fff;
+		font-size: 30px;
+		margin-bottom: 40px;
 }
 
-/* START OF SECONDARY ABOUT PAGE */
-
-.bioPara {
-    font-size: 20px;
-    margin-top: 50px;
+.langBar30 {
+		height: 15px;
+		background-color: #768fff;
+        background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 1) 90%, transparent 10%, transparent);
+        background-image: -o-linear-gradient(-45deg, rgba(255, 255, 255, 1) 90%, transparent 10%, transparent);
+        background-image: linear-gradient(-45deg, rgba(255, 255, 255, 1) 70%, transparent 10%, transparent);
+		border: 2px solid #768fff;
+		font-size: 30px;
+		margin-bottom: 40px;
 }
+
+.langLength {
+    width: 350px;
+}
+
 /* END OF ABOUT SECTION CODE! */
 /* ----------------------------------------------------------------------------------------------------------------------- */
 /* START OF PORTFOLIO SECTION CODE */
 
 /* Main Portfolio "Section" */
 #Portfolio {
-    background: #222 url('http://www.inertdesign.com/wp-content/uploads/2016/03/apple-iphone-desk-office-1920x500.jpg') center center no-repeat;
+    background: #222 url('../../imgs/portfolio.png') center center no-repeat;
     height: 45%;
  		background-size: cover;
     color: white;
@@ -419,7 +434,7 @@ i {
 /* START OF SERVICE CODE */
 
 #Service {
-    background: #222 url('../../imgs/services.jpg') center center no-repeat;
+    background: #222 url('../../imgs/services1.jpg') center center no-repeat;
     height: 45%;
     background-size: cover;
     color: white;
@@ -448,19 +463,19 @@ i {
 .ability {
     width: 300px;
     height: 500px;
-    border: 1px solid #ccc;
+    /* border: 1px solid #ccc; */
     background-color: transparent;
     margin: 0 auto;
     padding: 40px;
-    box-shadow: 0px 17px 10px -10px rgba(0,0,0,0.4);
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.09);
     transition: all ease-in-out 400ms;
 }
 
-/* Service Card Hover */
+/* Service Card Hover
 .ability:hover {
-    box-shadow: 0px 37px 20px -20px rgba(0,0,0,0.2);
-    transform: translate(0px, -10px);
-}
+    box-shadow: 0px 0px 10px 2px rgba(0,0,0,0.2);
+    /* transform: translate(0px, -10px);
+} /*
 
 /* Price Value */
 .serSpan {
@@ -475,7 +490,8 @@ i {
 
 /* Service Package Type */
 .serStatement {
-    font-size: 20px;
+    font-family: Roboto;
+    font-size: 31px;
     text-align: center;
     padding-bottom: 20px;
     border-bottom: 1px solid #ccc;
@@ -553,9 +569,8 @@ i {
 /* START OF CONTACT US CODE */
 
 #Contact {
-    background: url('http://www.thecinephilic.com/wp-content/uploads/2016/04/new-phone-1920x500.jpg') center center no-repeat;
+    background: url('../../imgs/contact.jpg') center center no-repeat;
     height: 45%;
-    background-repeat: no-repeat;
     background-size: cover;
     color: white;
     text-align: center;
@@ -614,12 +629,6 @@ i {
     height: 100px;
 }
 
-/* Footer P */
-.footP {
-    font-size: 20px;
-    color: #ccc;
-}
-
 /* Icons in footer */
 .faFooter {
     padding-left: 20px;
@@ -628,6 +637,7 @@ i {
 /* Copyright Note */
 .footerNote {
     color: #FFFFF0;
+    font-size: 16px;
 }
 
 /* END OF FOOTER CODE */
