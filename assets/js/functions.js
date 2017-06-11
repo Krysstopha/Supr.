@@ -42,8 +42,9 @@ sr.reveal('.test3', dura); // Skills - 5,6
 sr.reveal('.langTitle', dura); // Language Name
 sr.reveal('.langBar', { duration: 1500 }); // Progress Bar
 sr.reveal('.langPer', { duration: 2000 }); // Progress Percentage
-sr.reveal('.abilContainer', { duration: 1500 });
-sr.reveal('.button-centering', { rotate: { x: 0, y: -100, z: 0 } }, { duration: 30000 }); // More Button
+sr.reveal('.abilContainer', {duration: 1800 }); // Service Container
+// sr.reveal('.portContainer', {duration: 1800 }); //Portfolio Container
+// sr.reveal('.button-centering', { rotate: { x: 0, y: -100, z: 0 } }, { duration: 30000 }); // More Button
 
 // Landing Page Button Scroll
 $(".landScroll").click(function() {

@@ -123,20 +123,20 @@
                     </div>
               </div>
     			<div class="container" style="display: flex; justify-content: center;">
-    					<div class="langCont">
-    							<div class="langHolder">
-    									<h1 class="langTitle">HTML5</h1>
-    									<div class="langBar90 langLength"><span class="langPer">90%</span></div>
-    							</div>
-    							<div class="langHolder">
-    									<h1 class="langTitle">CSS3</h1>
-    									<div class="langBar80 langLength"><span class="langPer">80%</span></div>
-    							</div>
-    							<div class="langHolder">
-    									<h1 class="langTitle">JS</h1>
-    									<div class="langBar30 langLength"><span class="langPer">30%</span></div>
-    							</div>
-    					</div>
+    				<div class="langCont">
+    						<div class="langHolder">
+    								<h1 class="langTitle">HTML5</h1>
+    								<div class="langBar90 langLength"><span class="langPer">90%</span></div>
+    						</div>
+    						<div class="langHolder">
+    								<h1 class="langTitle">CSS3</h1>
+    								<div class="langBar80 langLength"><span class="langPer">80%</span></div>
+    						</div>
+    						<div class="langHolder">
+    								<h1 class="langTitle">JS</h1>
+    								<div class="langBar30 langLength"><span class="langPer">30%</span></div>
+    						</div>
+    				</div>
     			</div>
     		<!--	<div class="button-centering" style="margin-top: 10px">
     					<a href="about.html" class="btn btn-lg btn-primary">Learn More!</a>
@@ -160,16 +160,13 @@
     <div class="portfolio-section">
         <div class="container">
             <p class="introStatement">A showcase of my work.</p>
-                <div class="portContainer" ng-repeat="x in portfolio">
-                    <h1 class="portTitle">{{ x.title }}</h1>
-                    <img ng-src="{{ x.image }}" class="imageSrc img-responsive" id="test">
-                    <!-- <p class="portPara">{{ x.para}}</p> -->
                 </div>
-                <!--	<div class="button-centering" style="margin-top: 10px">
-        					<a href="about.html" class="btn btn-lg btn-primary">Learn More!</a>
-        			</div> -->
         </div>
-    </div>
+        <div class="portContainer" ng-repeat="x in portfolio">
+            <!-- <h1 class="portTitle">{{ x.title }}</h1> -->
+            <img ng-src="{{ x.image }}" class="imageSrc img-responsive" id="test">
+            <p class="portPara">{{ x.title }} <br> {{ x.para}}</p>
+        </div>
 <!-- END OF PORTFOLIO -->
 
 <!-- START OF SERVICES -->
@@ -189,49 +186,33 @@
             <p class="introStatement">{{ intro }}</p>
                 <div class="abilContainer">
                     <div class="ability" ng-repeat="x in product">
-                        <!-- <span class="serSpan">{{ x.price | currency}}<span class="serNum">From</span></span> -->
                         <h1 class="serStatement">{{ x.name }}</h1>
-                            <!-- <ul class="serTable">
-                                <li class="serItem">{{ x.item1 }}</li>
-                                <li class="serItem">{{ x.item2 }}</li>
-                                <li class="serItem">{{ x.item3 }}</li>
-                                <li class="serItem">{{ x.item4 }}</li>
-                                <li class="serItem" style="border-top: 1px solid #ccc">&nbsp;</li>
-                            </ul> -->
                                 <li class="serItem" style="margin-bottom: 10px;">{{ x.desc }}</li>
-                            <!-- <div class="serBtn">
-                                <a href="#Contact" class="serviceSpecScroll btn btn-enquire">Discover</a>
-                            </div> -->
                     </div>
                 </div>
 <!-- End of AngularJS Store -->
-<!--	<div class="button-centering" style="margin-top: 10px">
-            <a href="about.html" class="btn btn-lg btn-primary">Learn More!</a>
-    </div> -->
         </div>
     </div>
 <!-- END OF SERVICES -->
 
 <!-- START OF CONTACT US -->
-    <section id="Contact">
-        <div id="contact-caption">
-            <div class="container">
-                <div class="col-sm-10 col-sm-offset-1">
-                    <h1 class="coverTitle zoomIn animated">Contact Me</h1>
-                    <p class="kicker zoomIn animated">Communication At Its Finest.</p>
-                    </a>
-                </div>
+<section id="Contact">
+    <div id="contact-caption">
+        <div class="container">
+            <div class="col-sm-10 col-sm-offset-1">
+                <h1 class="coverTitle zoomIn animated">Contact Me</h1>
+                <p class="kicker zoomIn animated">Communication At Its Finest.</p>
+                </a>
             </div>
-            <div class="contactNote">
-              <p>Email is a fast and simple way to contact me in any amount of detail. <br>
-                 I strive to reply within ASAP.<br>
-                 My email: christopherdedes2906@gmail.com
-            </div>
-            <!--	<div class="button-centering" style="margin-top: 10px">
-    					<a href="about.html" class="btn btn-lg btn-primary">Learn More!</a>
-    			</div> -->
         </div>
-    </section>
+    </div>
+</section>
+<div class="emailClient">
+    <h1 class="emailContent">email</h1>
+        <p>khrysstopha@gmail.com</p>
+    <h1 class="emailContent">call</h1>
+        <p>0429497017</p>
+</div>
 <!-- END OF CONTACT US -->
 
 <!-- FOOTER -->
