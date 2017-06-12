@@ -29,26 +29,6 @@ i
   padding-left: 20px
   padding-top: 20px
 
-//* .btn-primary {
-//      background-color: #768FFF
-//      box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.4)
-//      cursor: pointer
-//      transition: all ease-in-out 200ms
-//      text-transform: uppercase
-//      border-radius: 3px
-//      border-color: transparent
-//      padding: 20px 30px
-//  *}
-//  *.button-centering {
-//  *    text-align: center
-//  *}
-//  *.btn-primary:hover {
-//  *    background-color: #768FFF
-//  *    box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.4)
-//  *    border-color: transparent
-//  *    /* transform: translate(0px, -10px)
-//  *
-
 .introStatement
   font-size: 50px
   border-bottom: 1px solid #ccc
@@ -56,48 +36,46 @@ i
   padding-top: 50px
   text-align: center
 
+.title
+  height: 45%
+  background-size: cover
+  color: white
+  text-align: center
+  display: flex
+  margin-top: 80px
+  margin-bottom: 80px
 /* End of Global Elements
 /* -----------------------------------------------------------------------------------------------------------------------
 /* START OF LANDING PAGE CODE
 
 /* Cover Landing
 
-#cover
-  background: #222 url("../../imgs/intro1.jpg") center center no-repeat
-  background-size: cover
-  color: white
-  height: 100%
-  text-align: center
-  display: flex
-  align-items: center
-
-/* Welcome Section
-
-#cover-caption
-  width: 100%
-
 /* Title
+.skyBox
+  position: relative
+  height: 1080px
+  background: url('../../imgs/intro1.jpg')
+    size: auto 1080px
+    position: top center
+    attachment: fixed
 
 .coverTitle
   font-size: 150px
-  *border-top: 16px solid #fff
-  *border-bottom: 16px solid #fff
-  border-radius: 10px
   padding-bottom: 10px
   color: #fefefe
-  //text-shadow: 2px
+  margin: 0 auto
+  text-align: center
 
 /* Kicker on Welcome Page
-
 .kicker
   font-size: 40px
   -webkit-animation-delay: 0.6s
   -o-animation-delay: 0.6s
   animation-delay: 0.6s
   color: #FFFFF0
+  text-align: center
 
 /* Slashes in kicker
-
 .slash
   color: #769FFF
 
@@ -119,20 +97,17 @@ i
 /* START OF NAV BAR CODE
 
 /* Nav Bar Color
-
 .navbar-inverse
   background-color: rgba(0, 0, 0, 0.6)
   box-shadow: 10px rgba(0, 0, 0, 0.9)
 
 /* NavBar Links
-
 .navType
   font-size: 20px
   text-decoration: none
   margin-right: 20px
 
 /* NavBar Brand Name
-
 .navbar-brand
   font-size: 28px
 
@@ -141,7 +116,6 @@ i
 /* START OF ABOUT SECTION CODE
 
 /* Simplicity Statement
-
 .h2-statement
   font-size: 40px
   border-bottom: 1px solid #ccc
@@ -150,13 +124,11 @@ i
   text-align: center
 
 /* About Section
-
 #About
   padding-top: 50px
   padding-bottom: 50px
 
 /* Main Div of the about section
-
 .face-lockup
   max-width: 780px
   display: flex
@@ -165,7 +137,6 @@ i
   justify-content: space-around
 
 /* Icons in the about section
-
 .about-icon
   font-size: 45px
   background-color: #e5eaee
@@ -174,7 +145,6 @@ i
   color: $blue
 
 /* Icons order
-
 .icon1
   order: 1
 
@@ -195,7 +165,6 @@ i
   box-shadow: 0px 17px 10px -10px rgba(0, 0, 0, 0.4)
 
 /* About section small text
-
 .about-statement
   padding-bottom: 50px
   text-align: center
@@ -217,7 +186,6 @@ i
     margin: 10px
 
 /* About section text
-
 .blurb
   max-width: 620px
   padding: 0 15px
@@ -229,7 +197,6 @@ i
 /* Start of the Skills - Circles
 
 /* Main container for the Skills
-
 .skill-lockup
   text-align: center
   max-width: 500px
@@ -242,13 +209,11 @@ i
   overflow: auto
 
 /* Class for each individual skill
-
 .skill-unit
   width: 250px
   float: left
 
 /* The row of circles
-
 .skill-icon
   margin-bottom: 30px
   margin-left: 2px
@@ -272,7 +237,6 @@ i
       margin: 2px
 
 /* The Circles
-
 .rating-9 > span:nth-child(n+10), .rating-8 > span:nth-child(n+9), .rating-7 > span:nth-child(n+8), .rating-6 > span:nth-child(n+7)
   background-color: #E5EAFF
 
@@ -283,7 +247,6 @@ i
 /* End Of The Skills - Circles
 
 /* Start of :anguage Section
-
 .langCout
   display: flex
   justify-content: center
@@ -336,19 +299,12 @@ i
 /* START OF PORTFOLIO SECTION CODE
 
 /* Main Portfolio "Section"
-
 #Portfolio
   background: #222 url('../../imgs/portfolio.png') center center no-repeat
-  height: 45%
-  background-size: cover
-  color: white
-  text-align: center
-  display: flex
-  margin-top: 80px
-  margin-bottom: 80px
+    size: auto 1080px
+    attachment: fixed
 
 /* Portfolio Section
-
 #portfolio-caption
   margin-top: 100px
   width: 100%
@@ -361,7 +317,6 @@ i
   margin-bottom: 30px
 
 /* Images of projects
-
 .imageSrc
   max-width: 500px
   height: 500px
@@ -369,8 +324,8 @@ i
 .portContainer:hover .portPara
   visibility: visible
   opacity: 1
-/* Paragraphs about Projects
 
+/* Paragraphs about Projects
 .portPara
   position: absolute
   top: 0
@@ -419,15 +374,9 @@ i
 /* START OF SERVICE CODE
 
 #Service
-  background: #222 url('../../imgs/services1.jpg') center center no-repeat
-  height: 45%
-  background-size: cover
-  color: white
-  text-align: center
-  display: flex
-  margin-top: 80px
-  margin-bottom: 80px
-
+  background: #222 url('../../imgs/services2.jpg') center center no-repeat
+    size: auto 1500px
+    attachment: fixed
 /* Service Section
 
 #service-caption
@@ -545,15 +494,9 @@ i
 /* START OF CONTACT US CODE
 
 #Contact
-  background: url('../../imgs/contact.jpg') center center no-repeat
-  height: 45%
-  background-size: cover
-  color: white
-  text-align: center
-  display: flex
-  margin-top: 80px
-  margin-bottom: 80px
-
+  background: url('../../imgs/contact1.jpg') center center no-repeat
+    attachment: fixed
+    size: auto 1920
 /* Contact Section
 
 #contact-caption
@@ -620,6 +563,7 @@ i
 /* Icons in footer
 
 .faFooter
+  margin-top: -20px
   padding-left: 20px
   text-align: center
 
@@ -629,8 +573,45 @@ i
   color: #FFFFF0
   font-size: 20px
   text-align: center
+  padding-top: 20px
 
 /* END OF FOOTER CODE
 
 /* END OF CODE
 /* -----------------------------------------------------------------------------------------------------------------------
+
+/* UNUSED CODE */
+
+//* .btn-primary {
+//      background-color: #768FFF
+//      box-shadow: 0px 0px 10px 1px rgba(0,0,0,0.4)
+//      cursor: pointer
+//      transition: all ease-in-out 200ms
+//      text-transform: uppercase
+//      border-radius: 3px
+//      border-color: transparent
+//      padding: 20px 30px
+//  *}
+//  *.button-centering {
+//  *    text-align: center
+//  *}
+//  *.btn-primary:hover {
+//  *    background-color: #768FFF
+//  *    box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.4)
+//  *    border-color: transparent
+//  *    /* transform: translate(0px, -10px)
+//  *
+//
+// #cover
+//   background: #222 url("../../imgs/intro1.jpg") center center no-repeat
+//   background-size: cover
+//   color: white
+//   height: 100%
+//   text-align: center
+//   display: flex
+//   align-items: center
+//
+// /* Welcome Section
+//
+// #cover-caption
+//   width: 100%
