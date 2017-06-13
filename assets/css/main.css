@@ -509,16 +509,24 @@ i {
   color: black; }
 
 .emailClient {
-  width: 1200px;
+  width: 1400px;
   height: 400px;
   margin: 0 auto;
-  font-size: 80px; }
+  list-style-type: none; }
 
-.emailContent {
-  font-size: 65px; }
+.emailTitle {
+  font-size: 55px;
+  margin-bottom: 40px;
+  font-weight: 200; }
 
-.emailClient > p {
-  font-family: Raleway; }
+.emailData {
+  font-size: 64px;
+  color: #3A3D41;
+  font-weight: 700; }
+  .emailData:hover {
+    color: #768fff;
+    transition: 0.5s;
+    text-decoration: none; }
 
 /* END OF CONTACT US CODE */
 /* ----------------------------------------------------------------------------------------------------------------------- */
